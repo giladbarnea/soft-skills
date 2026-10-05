@@ -14,6 +14,7 @@ For relationship definitions, see the plugin's [roles map](../../roles.md).
 | Deciding whether delegation is worthwhile | [When to delegate](planning/when-to-delegate.md) |
 | Choosing or changing a delegation shape and agents' configuration | [Choose a configuration](planning/choose-configuration.md) |
 | About to dispatch, or currently supervising delegates | [Delegate coordination](coordination/delegates.md) |
+| The session appears to span multiple hours or more | Also [Many-hours supervision](coordination/many-hours-supervision.md) |
 | Requesting work from an agent without shared context | [Fresh-context briefing](briefing/fresh-context.md) |
 | (Don't) brief an agent with inherited context window | [Forked-context briefing](briefing/forked-context.md) |
 | Examples of briefing delegates | [Briefing examples](briefing/examples.md) |
