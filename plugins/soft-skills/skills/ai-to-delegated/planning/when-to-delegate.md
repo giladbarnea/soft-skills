@@ -11,7 +11,7 @@ Read this when deciding whether delegation is worthwhile. If delegation is alrea
 
 <!-- todo: this section could just as well be titled “Why it's good to let others do work too”, and framed not as main-targeted but as a rank-agnostic collaborative mindset that gets more, better work done within a set budget. -->
 The leader agent (the one delegating) already holds all the context, so why not have it just do the work directly? The answer is **context management**. Delegated AI’s have their own context window. They pay tokens with their window while the leader’s stays unused. This gives the leader agent a longer runway.
-A good analogy is that context windows are compute capacities, and tokens are processing cycles. 
+A good analogy is that context windows are compute capacities, and tokens are processing cycles.
 
 ## Different types of delegation and their tradeoffs
 
@@ -38,7 +38,7 @@ The following factors demand higher token usage (consumes more fuel). When multi
 2. Complexity
 3. Completion quality (as desired by the human in charge)
 
-The Magnitude of Work is the fuel tank capacity required to finish a given task. 
+The Magnitude of Work is the fuel tank capacity required to finish a given task.
 Roughly speaking, it can be plainly expressed as `MagnitudeOfWork = TaskSize * Complexity * CompletionQuality`.
 
 Real-world missions with real-world impact are often large, complex and require high quality = high MOW.

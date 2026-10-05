@@ -19,7 +19,7 @@ These illustrate [fresh-context briefing](fresh-context.md). Read them when exam
     </example-1>
 
     <example-2>
-      Example 2 settings: the `load-context` skill instructs to read CLAUDE.md, ARCHITECTURE.md, docs/webserver/API.  md, docs/data/architecture.md, server/api.py, and server/db.py.    
+      Example 2 settings: the `load-context` skill instructs to read CLAUDE.md, ARCHITECTURE.md, docs/webserver/API.  md, docs/data/architecture.md, server/api.py, and server/db.py.
       <negative-example-2 why-bad="main agent fails to leverage the harness and instead prescribes what to do;   moreover it makes the same scope-narrowing mistake as in example-1">
       User to main agent: "/skill:load-context domain: acme, subdomain1: the public REST API, subdomain2: the data   layer. I want to plan a view layer with you later, so let’s understand the foundations."
       Main agent spawns a sub-agent and prompts it: "Read CLAUDE.md, ARCHITECTURE.md, docs/webserver/API.md, docs/data/  architecture.md, server/api.py, server/db.py, and summarize how the REST API and data layers work. Cover how   function `server/api.py:from_db` fetches the data by calling the `server/db.py:get_data` function, and how [...  proceeds to prescribe ironically specific locations to “discover”]"

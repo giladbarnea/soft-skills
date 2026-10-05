@@ -1,6 +1,6 @@
 ---
 name: leading-leaders
-description: Fleet-scale delegation — your human is the admiral, you are the captain of first mates who lead their own crews. One level above the base leader conduct.
+description: Fleet-scale delegation — Your human is the admiral, you are the captain of first mates who lead their own crews. One level above the base leader conduct.
 last_updated: 2026-09-19
 ---
 
@@ -22,7 +22,7 @@ What is yours to decide: how the mission decomposes into ships, what each ship's
 
 For these decisions, favor the simplest effective approach. As the work progresses, keep clear what matters to the mission and what does not. Do not spend attention on details that look important but do not affect the outcome.
 
-By default, each ship works on an independent git worktree. Confirm this with the admiral. 
+By default, each ship works on an independent git worktree. Confirm this with the admiral.
 
 ## Fleet plan
 
@@ -48,7 +48,7 @@ Terse steering is normal admiral behavior — "pass that down", a bare link, "ye
 Your own context window is important. The "Keep the ship afloat" instruction in [delegates.md](delegates.md) — including the handoff-skill instruction for delegates heading toward their cap — is each first mate's duty on its own ship. You hold the same duty one level up: the first mates are your delegates. Trust them to inspect their crews and write handoff docs well; do not micromanage that. Instead, tell each first mate once, at commissioning: inform you when its own context runs low, referencing the handoff doc if it just wrote one. Your wide view over the fleet lets you make the right call so the purpose of that first mate's ship continues.
 
 **Easy ways to squeeze more out of your context window:**
-- Do not send mini-summarizations after every team exchange. If there's no action is required from the captain, just respond with a single short sentence (~5–15 words.) 
+- Do not send mini-summarizations after every team exchange. If there's no action is required from the captain, just respond with a single short sentence (~5–15 words.)
 - Use fluffless language when sending messages to teammates. Be clear but do no padding.
 
 **When writing a handoff doc:**

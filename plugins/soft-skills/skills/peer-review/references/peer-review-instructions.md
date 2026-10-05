@@ -1,5 +1,5 @@
 ---
-name: peer-review-instructions 
+name: peer-review-instructions
 description: Targets high-confidence, high-impact issues after studying requirements and the full blast radius.
 argument-hint: work_to_review research_targets
 ---

@@ -13,10 +13,10 @@ The following is an "easy" case, because the subagents' graph maps cleanly to th
 In terms of systems/domains, the user describes two worlds: the project where the session lives, and Pi.
 
 <example-user-message>
-$PWD is a fork of a Pi extension called `btw`. a slash command for ephemeral side question. Pi is ~/.pi/AGENTS.md. agent harness. i have taken a screenshots of what the current experience is (behavior). it's pretty bare-bones. 
-1. at the minimum, i want a better waiting experience. 
-  1.a. at the minimum of the minimum, a braille animation. but open to other ideas. 
-  1.b. (better) something that solves the problem outright is finding whether it's possible to stream the btw response, and not wait until it's 100% finalized. 
+$PWD is a fork of a Pi extension called `btw`. a slash command for ephemeral side question. Pi is ~/.pi/AGENTS.md. agent harness. i have taken a screenshots of what the current experience is (behavior). it's pretty bare-bones.
+1. at the minimum, i want a better waiting experience.
+  1.a. at the minimum of the minimum, a braille animation. but open to other ideas.
+  1.b. (better) something that solves the problem outright is finding whether it's possible to stream the btw response, and not wait until it's 100% finalized.
 2. i'm not sure the response renders markdown. Pi has a built in markdown renderer out of the box.
 3. the btw response hides real chat events. the longer the response is, the more real chat is hidden (from the end). the btw response should be concatenated BELOW the real chat, not displayed over it.
 4. Simple UI concern: currently it's not obvious at a glance where the "real" last agent response ends and where the btw response starts. one needs to be able to tell them apart reflexively.

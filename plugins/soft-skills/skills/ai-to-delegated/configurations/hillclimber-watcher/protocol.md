@@ -41,7 +41,7 @@ Before spawning the team, write a short context file and tell both teammates to 
 The context file should include:
 
 1. The actual goal and metric.
-2. The current baseline, if any. 
+2. The current baseline, if any.
 3. The constraints that prevent cheap wins.
 4. The relevant files, referenced by path rather than copied wholesale.
 5. The validation command or measurement harness.
@@ -66,7 +66,7 @@ Hillclimber: own the implementation and optimization loop. Try approaches, measu
 
 Watcher: read the adjacent `watcher.md` for your observation procedure. Do not take over the implementation.
 
-Both: set short, current statuses frequently. Keep summaries concise. Continue until you either reach the target or have been plateuing for more than an hour straight without progress (yes, look at the clock from time to time.). 
+Both: set short, current statuses frequently. Keep summaries concise. Continue until you either reach the target or have been plateuing for more than an hour straight without progress (yes, look at the clock from time to time.).
 
 Communicate directly with each other and converge without main-agent micromanagement.
 ```

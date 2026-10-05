@@ -17,7 +17,7 @@ N flat teammates working in parallel.
 
 ## Abstract required conditions for this shape to fit needs
 
-- Teammates’ bottom-line deliverable is figuring out *how* to do something; 
+- Teammates’ bottom-line deliverable is figuring out *how* to do something;
 - Teammates’ scopes overlap semantically at least a bit.
 
 Examples (not an exhaustive list — derive the underlying principles and generalize regardless of domain):
