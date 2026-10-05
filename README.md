@@ -1,6 +1,6 @@
 # `soft-skills`
 
-![Late-shift desk with a terminal showing trusted AI delegation](assets/interaction-banner.png)
+![Late-shift desk with a terminal showing trusted AI delegation](assets/banner.png)
 
 > **Communication toolkit for burnt-out humans and AI collaborations.**
 
