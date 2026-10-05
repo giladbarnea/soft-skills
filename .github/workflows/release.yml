@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      id-token: write
     env:
       RELEASE_TAG: ${{ github.ref_name }}
     steps:
@@ -33,7 +34,7 @@ jobs:
             exit 1
           }
           version="${RELEASE_TAG#v}"
-          for manifest in plugins/soft-skills/{.claude-plugin,.codex-plugin}/plugin.json; do
+          for manifest in package.json plugins/soft-skills/{.claude-plugin,.codex-plugin}/plugin.json; do
             manifest_version="$(jq -er '.version' "$manifest")"
             [[ "$manifest_version" == "$version" ]] || {
               printf '%s declares %s, but the release tag requires %s.\n' "$manifest" "$manifest_version" "$version" >&2
@@ -41,16 +42,17 @@ jobs:
             }
           done
 
-      - name: Build and check the Pi archive
+      - name: Set up npm
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+
+      # A rerun after a failed GitHub release step finds this version already published.
+      - name: Publish the Pi package to npm
         shell: bash
         run: |
-          ./build-plugins.sh
-          unzip -t soft-skills-pi-skills.zip
-          changes="$(git status --porcelain -- pi/skills plugins/soft-skills/LICENSE)"
-          [[ -z "$changes" ]] || {
-            printf 'Generated files are stale. Run ./build-plugins.sh and commit its output before tagging.\n%s\n' "$changes" >&2
-            exit 1
-          }
+          npm view "soft-skills@${RELEASE_TAG#v}" version >/dev/null 2>&1 || npm publish --provenance --access public
 
       - name: Publish the GitHub release
         env:
@@ -59,8 +61,7 @@ jobs:
         shell: bash
         run: |
           gh release create "$RELEASE_TAG" \
-            'soft-skills-pi-skills.zip#Pi skills' \
             --verify-tag \
             --title "Soft Skills $RELEASE_TAG" \
             --generate-notes \
-            --notes "Install instructions for Claude Code, Codex, and Pi: [README](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/blob/${RELEASE_TAG}/README.md#install). Pi users can download the attached **soft-skills-pi-skills.zip**."
+            --notes "Install instructions for Claude Code, Codex, and Pi: [README](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/blob/${RELEASE_TAG}/README.md#install)."

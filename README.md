@@ -63,11 +63,8 @@ codex plugin add soft-skills@soft-skills
 
 ### Pi
 
-Download [`soft-skills-pi-skills.zip`](https://github.com/giladbarnea/soft-skills/releases/latest/download/soft-skills-pi-skills.zip), then run:
-
 ```bash
-mkdir -p ~/.pi/agent/skills
-unzip soft-skills-pi-skills.zip -d ~/.pi/agent/skills
+pi install npm:soft-skills
 ```
 
 Start a new Pi session after installation.
@@ -116,33 +113,24 @@ Start a new Pi session after installation.
 
 The installed `soft-skills` plugin has no MCP server, executable code, network calls, hooks, or background process. Your laptop can remain disappointed by the missing daemon.
 
-Pi installs five sibling skills without a plugin root. Install the full set: dependent skills load `theory-of-mind` by name rather than carrying reference copies. See [`pi/README.md`](pi/README.md) for the layout.
-
-## Develop from one source
-
-`plugins/soft-skills` is the canonical content. `./build-plugins.sh` generates tracked `pi/skills` and ignored `soft-skills-pi-skills.zip`.
-
-The build packages only the plugin-global files each Pi skill references. It preserves their plugin-relative paths, rewrites affected links, and rejects broken package graphs.
-
-The build also copies the root `LICENSE` into the plugin. The pre-commit hook runs the build and stages generated tracked files. See [`.githooks/README.md`](.githooks/README.md) for its behavior and setup.
+Pi installs the same `plugins/soft-skills` tree as a [Pi package](https://pi.dev/packages). The root `package.json` points Pi to its `skills` directory, so all three agents read identical files.
 
 ## Release from a version tag
 
 Pushing a `vMAJOR.MINOR.PATCH` tag starts the [release workflow](.github/workflows/release.yml).
 
-1. Set the same version in `plugins/soft-skills/.claude-plugin/plugin.json` and `plugins/soft-skills/.codex-plugin/plugin.json`.
-2. Run `./build-plugins.sh`.
-3. Commit the source, manifests, workflow, and generated files. Push the commit.
-4. Create and push the matching tag. For version `1.1.0`:
+1. Set the same version in `package.json`, `plugins/soft-skills/.claude-plugin/plugin.json`, and `plugins/soft-skills/.codex-plugin/plugin.json`.
+2. Commit and push.
+3. Create and push the matching tag. For version `1.1.0`:
 
    ```bash
    git tag -a v1.1.0 -m "Soft Skills v1.1.0"
    git push origin v1.1.0
    ```
 
-CI checks that both manifest versions match the tag and that generated files are current. It then publishes **Soft Skills v1.1.0**, with generated release notes and `soft-skills-pi-skills.zip` attached.
+CI checks that all three manifest versions match the tag. It then publishes `soft-skills@1.1.0` to npm and creates the **Soft Skills v1.1.0** GitHub release.
 
-The workflow uses GitHub's built-in token. No extra secret is required. Branch pushes alone do not publish releases.
+npm publishing uses [trusted publishing](https://docs.npmjs.com/trusted-publishers) from this workflow. No secret is required. Branch pushes alone do not publish releases.
 
 ## License
 

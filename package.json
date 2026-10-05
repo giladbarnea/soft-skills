@@ -2,18 +2,27 @@
   "name": "soft-skills",
   "version": "2.1.0",
   "description": "Communication toolkit for burnt-out humans and collaborative AI's",
-  "author": {
-    "name": "Gilad Barnea",
-    "url": "https://github.com/giladbarnea"
-  },
+  "author": "Gilad Barnea (https://github.com/giladbarnea)",
   "homepage": "https://github.com/giladbarnea/soft-skills",
-  "repository": "https://github.com/giladbarnea/soft-skills",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giladbarnea/soft-skills.git"
+  },
   "license": "MIT",
   "keywords": [
+    "pi-package",
     "communication",
     "delegation",
     "handoff",
     "peer-review",
     "agents"
-  ]
+  ],
+  "files": [
+    "plugins/soft-skills"
+  ],
+  "pi": {
+    "skills": [
+      "./plugins/soft-skills/skills"
+    ]
+  }
 }
