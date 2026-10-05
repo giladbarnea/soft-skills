@@ -1,13 +1,13 @@
 {
-  "name": "interaction",
-  "version": "1.0.5",
+  "name": "soft-skills",
+  "version": "2.0.0",
   "description": "Communication toolkit for burnt-out humans and collaborative AI's",
   "author": {
     "name": "Gilad Barnea",
     "url": "https://github.com/giladbarnea"
   },
-  "homepage": "https://github.com/giladbarnea/interaction",
-  "repository": "https://github.com/giladbarnea/interaction",
+  "homepage": "https://github.com/giladbarnea/soft-skills",
+  "repository": "https://github.com/giladbarnea/soft-skills",
   "license": "MIT",
   "keywords": [
     "communication",
@@ -18,7 +18,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Interaction",
+    "displayName": "Soft Skills",
     "shortDescription": "Communication toolkit for burnt-out humans and collaborative AI's",
     "longDescription": "Communication toolkit for burnt-out humans and collaborative AI's",
     "developerName": "Gilad Barnea",

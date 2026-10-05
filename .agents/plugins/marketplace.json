@@ -1,14 +1,14 @@
 {
-  "name": "interaction",
+  "name": "soft-skills",
   "interface": {
-    "displayName": "Interaction"
+    "displayName": "Soft Skills"
   },
   "plugins": [
     {
-      "name": "interaction",
+      "name": "soft-skills",
       "source": {
         "source": "local",
-        "path": "./plugins/interaction"
+        "path": "./plugins/soft-skills"
       },
       "policy": {
         "installation": "AVAILABLE",

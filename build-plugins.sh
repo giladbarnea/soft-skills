@@ -3,12 +3,12 @@
 set -euo pipefail
 
 readonly REPOSITORY_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-readonly PLUGIN_DIRECTORY="$REPOSITORY_ROOT/plugins/interaction"
+readonly PLUGIN_DIRECTORY="$REPOSITORY_ROOT/plugins/soft-skills"
 readonly PI_SKILLS_DIRECTORY="$REPOSITORY_ROOT/pi/skills"
-readonly PI_ARCHIVE="$REPOSITORY_ROOT/interaction-pi-skills.zip"
+readonly PI_ARCHIVE="$REPOSITORY_ROOT/soft-skills-pi-skills.zip"
 readonly GLOBAL_PACKAGER="$REPOSITORY_ROOT/package-pi-skill-globals.py"
 readonly ARCHIVE_TIMESTAMP="198001010000"
-readonly TEMPORARY_DIRECTORY="$(mktemp -d "${TMPDIR:-/tmp}/interaction-build.XXXXXX")"
+readonly TEMPORARY_DIRECTORY="$(mktemp -d "${TMPDIR:-/tmp}/soft-skills-build.XXXXXX")"
 
 trap 'rm -rf "$TEMPORARY_DIRECTORY"' EXIT
 
@@ -51,8 +51,8 @@ rsync -a "$REPOSITORY_ROOT/LICENSE" "$TEMPORARY_DIRECTORY/skills/LICENSE"
 find "$TEMPORARY_DIRECTORY/skills" -exec touch -t "$ARCHIVE_TIMESTAMP" {} +
 (
   cd "$TEMPORARY_DIRECTORY/skills"
-  zip -q -r -X "$TEMPORARY_DIRECTORY/interaction-pi-skills.zip" "${skill_names[@]}" LICENSE
+  zip -q -r -X "$TEMPORARY_DIRECTORY/soft-skills-pi-skills.zip" "${skill_names[@]}" LICENSE
 )
-mv "$TEMPORARY_DIRECTORY/interaction-pi-skills.zip" "$PI_ARCHIVE"
+mv "$TEMPORARY_DIRECTORY/soft-skills-pi-skills.zip" "$PI_ARCHIVE"
 
 printf '✓ Built Claude/Codex plugin, Pi skills, and %s\n' "$(basename "$PI_ARCHIVE")"

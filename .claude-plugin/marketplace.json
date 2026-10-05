@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "interaction",
+  "name": "soft-skills",
   "description": "Communication toolkit for burnt-out humans and collaborative AI's",
   "owner": {
     "name": "Gilad Barnea",
@@ -8,8 +8,8 @@
   },
   "plugins": [
     {
-      "name": "interaction",
-      "source": "./plugins/interaction",
+      "name": "soft-skills",
+      "source": "./plugins/soft-skills",
       "description": "Communication toolkit for burnt-out humans and collaborative AI's",
       "category": "productivity"
     }

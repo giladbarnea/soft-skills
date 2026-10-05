@@ -1,6 +1,6 @@
 # Pi installs skills without a plugin root
 
-Claude and Codex preserve the `interaction` plugin root. Their skills can read the shared plugin reference through a plugin-relative path.
+Claude and Codex preserve the `soft-skills` plugin root. Their skills can read the shared plugin reference through a plugin-relative path.
 
 Pi discovers each skill directly under `~/.pi/agent/skills`. The plugin root does not exist there. The build copies each referenced plugin-global file into only the skills that need it, preserves its plugin-relative path, and rewrites affected links.
 
@@ -16,9 +16,9 @@ The Pi archive contains these five skill directories:
 - `peer-review`
 - `theory-of-mind`
 
-Download the latest [`interaction-pi-skills.zip`](https://github.com/giladbarnea/interaction/releases/latest/download/interaction-pi-skills.zip), then run:
+Download the latest [`soft-skills-pi-skills.zip`](https://github.com/giladbarnea/soft-skills/releases/latest/download/soft-skills-pi-skills.zip), then run:
 
 ```bash
 mkdir -p ~/.pi/agent/skills
-unzip interaction-pi-skills.zip -d ~/.pi/agent/skills
+unzip soft-skills-pi-skills.zip -d ~/.pi/agent/skills
 ```

@@ -1,6 +1,6 @@
 # The pre-commit hook keeps generated packages current
 
-`plugins/interaction` is the canonical plugin. The tracked `pi/skills` tree and the Pi archive are generated from it.
+`plugins/soft-skills` is the canonical plugin. The tracked `pi/skills` tree and the Pi archive are generated from it.
 
 ## Each commit rebuilds the distributions
 
@@ -10,15 +10,15 @@
 2. Runs [`package-pi-skill-globals.py`](../package-pi-skill-globals.py).
 3. Replaces the tracked `pi/skills` tree with the generated Pi layout.
 4. Copies the root `LICENSE` into the Claude and Codex plugin.
-5. Creates the ignored `interaction-pi-skills.zip` archive with stable timestamps.
+5. Creates the ignored `soft-skills-pi-skills.zip` archive with stable timestamps.
 
-The hook stages `pi/skills` and `plugins/interaction/LICENSE`. It does not stage source edits or the ignored archive.
+The hook stages `pi/skills` and `plugins/soft-skills/LICENSE`. It does not stage source edits or the ignored archive.
 
 ## Pi receives only the plugin-global files each skill needs
 
-Pi installs sibling skills without the `interaction` plugin root. A Pi skill cannot use a link that climbs from its skill directory into that missing root.
+Pi installs sibling skills without the `soft-skills` plugin root. A Pi skill cannot use a link that climbs from its skill directory into that missing root.
 
-The packager resolves relative Markdown links and relative `@path` references. When a reference targets a file inside `plugins/interaction` but outside `skills`, the packager:
+The packager resolves relative Markdown links and relative `@path` references. When a reference targets a file inside `plugins/soft-skills` but outside `skills`, the packager:
 
 1. Copies that file into the generated skill at the same plugin-relative path.
 2. Rewrites the reference to the generated location.

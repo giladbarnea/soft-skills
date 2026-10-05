@@ -1,10 +1,10 @@
-# Interaction
+# Soft Skills
 
 ![Late-shift desk with a terminal showing trusted AI delegation](assets/interaction-banner.png)
 
 > **Communication toolkit for burnt-out humans and collaborative AI's.**
 
-[![Release](https://img.shields.io/github/v/release/giladbarnea/interaction?style=flat-square&color=111111&label=release)](https://github.com/giladbarnea/interaction/releases/latest)
+[![Release](https://img.shields.io/github/v/release/giladbarnea/soft-skills?style=flat-square&color=111111&label=release)](https://github.com/giladbarnea/soft-skills/releases/latest)
 ![Works with Claude Code, Codex, and Pi](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20Codex%20%7C%20Pi-111111?style=flat-square)
 [![MIT license](https://img.shields.io/badge/license-MIT-111111?style=flat-square)](LICENSE)
 
@@ -50,24 +50,24 @@
 ### Claude Code
 
 ```text
-/plugin marketplace add giladbarnea/interaction
-/plugin install interaction@interaction
+/plugin marketplace add giladbarnea/soft-skills
+/plugin install soft-skills@soft-skills
 ```
 
 ### Codex
 
 ```bash
-codex plugin marketplace add giladbarnea/interaction
-codex plugin add interaction@interaction
+codex plugin marketplace add giladbarnea/soft-skills
+codex plugin add soft-skills@soft-skills
 ```
 
 ### Pi
 
-Download [`interaction-pi-skills.zip`](https://github.com/giladbarnea/interaction/releases/latest/download/interaction-pi-skills.zip), then run:
+Download [`soft-skills-pi-skills.zip`](https://github.com/giladbarnea/soft-skills/releases/latest/download/soft-skills-pi-skills.zip), then run:
 
 ```bash
 mkdir -p ~/.pi/agent/skills
-unzip interaction-pi-skills.zip -d ~/.pi/agent/skills
+unzip soft-skills-pi-skills.zip -d ~/.pi/agent/skills
 ```
 
 Start a new Pi session after installation.
@@ -92,7 +92,7 @@ Start a new Pi session after installation.
 
   The plugin is almost ready for release. I only need your decision on how to package it for Pi, since Pi does not support plugins natively.
   
-  I can either package it as a single `interaction` skill, or as five separate skills. Which do you prefer?
+  I can either package it as a single `soft-skills` skill, or as five separate skills. Which do you prefer?
 ```
 
 **`ai-to-delegated`:**
@@ -114,13 +114,13 @@ Start a new Pi session after installation.
 
 ## Only Markdown
 
-The installed `interaction` plugin has no MCP server, executable code, network calls, hooks, or background process. Your laptop can remain disappointed by the missing daemon.
+The installed `soft-skills` plugin has no MCP server, executable code, network calls, hooks, or background process. Your laptop can remain disappointed by the missing daemon.
 
 Pi installs five sibling skills without a plugin root. Install the full set: dependent skills load `theory-of-mind` by name rather than carrying reference copies. See [`pi/README.md`](pi/README.md) for the layout.
 
 ## Develop from one source
 
-`plugins/interaction` is the canonical content. `./build-plugins.sh` generates tracked `pi/skills` and ignored `interaction-pi-skills.zip`.
+`plugins/soft-skills` is the canonical content. `./build-plugins.sh` generates tracked `pi/skills` and ignored `soft-skills-pi-skills.zip`.
 
 The build packages only the plugin-global files each Pi skill references. It preserves their plugin-relative paths, rewrites affected links, and rejects broken package graphs.
 
@@ -130,17 +130,17 @@ The build also copies the root `LICENSE` into the plugin. The pre-commit hook ru
 
 Pushing a `vMAJOR.MINOR.PATCH` tag starts the [release workflow](.github/workflows/release.yml).
 
-1. Set the same version in `plugins/interaction/.claude-plugin/plugin.json` and `plugins/interaction/.codex-plugin/plugin.json`.
+1. Set the same version in `plugins/soft-skills/.claude-plugin/plugin.json` and `plugins/soft-skills/.codex-plugin/plugin.json`.
 2. Run `./build-plugins.sh`.
 3. Commit the source, manifests, workflow, and generated files. Push the commit.
 4. Create and push the matching tag. For version `1.1.0`:
 
    ```bash
-   git tag -a v1.1.0 -m "Interaction v1.1.0"
+   git tag -a v1.1.0 -m "Soft Skills v1.1.0"
    git push origin v1.1.0
    ```
 
-CI checks that both manifest versions match the tag and that generated files are current. It then publishes **Interaction v1.1.0**, with generated release notes and `interaction-pi-skills.zip` attached.
+CI checks that both manifest versions match the tag and that generated files are current. It then publishes **Soft Skills v1.1.0**, with generated release notes and `soft-skills-pi-skills.zip` attached.
 
 The workflow uses GitHub's built-in token. No extra secret is required. Branch pushes alone do not publish releases.
 

@@ -33,7 +33,7 @@ jobs:
             exit 1
           }
           version="${RELEASE_TAG#v}"
-          for manifest in plugins/interaction/{.claude-plugin,.codex-plugin}/plugin.json; do
+          for manifest in plugins/soft-skills/{.claude-plugin,.codex-plugin}/plugin.json; do
             manifest_version="$(jq -er '.version' "$manifest")"
             [[ "$manifest_version" == "$version" ]] || {
               printf '%s declares %s, but the release tag requires %s.\n' "$manifest" "$manifest_version" "$version" >&2
@@ -45,8 +45,8 @@ jobs:
         shell: bash
         run: |
           ./build-plugins.sh
-          unzip -t interaction-pi-skills.zip
-          changes="$(git status --porcelain -- pi/skills plugins/interaction/LICENSE)"
+          unzip -t soft-skills-pi-skills.zip
+          changes="$(git status --porcelain -- pi/skills plugins/soft-skills/LICENSE)"
           [[ -z "$changes" ]] || {
             printf 'Generated files are stale. Run ./build-plugins.sh and commit its output before tagging.\n%s\n' "$changes" >&2
             exit 1
@@ -59,8 +59,8 @@ jobs:
         shell: bash
         run: |
           gh release create "$RELEASE_TAG" \
-            'interaction-pi-skills.zip#Pi skills' \
+            'soft-skills-pi-skills.zip#Pi skills' \
             --verify-tag \
-            --title "Interaction $RELEASE_TAG" \
+            --title "Soft Skills $RELEASE_TAG" \
             --generate-notes \
-            --notes "Install instructions for Claude Code, Codex, and Pi: [README](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/blob/${RELEASE_TAG}/README.md#install). Pi users can download the attached **interaction-pi-skills.zip**."
+            --notes "Install instructions for Claude Code, Codex, and Pi: [README](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/blob/${RELEASE_TAG}/README.md#install). Pi users can download the attached **soft-skills-pi-skills.zip**."
