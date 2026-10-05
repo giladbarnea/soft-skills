@@ -1,136 +1,165 @@
-# Soft Skills
+# `soft-skills`
 
 ![Late-shift desk with a terminal showing trusted AI delegation](assets/interaction-banner.png)
 
-> **Communication toolkit for burnt-out humans and collaborative AI's.**
+> **Communication toolkit for burnt-out humans and AI collaborations.**
 
 [![Release](https://img.shields.io/github/v/release/giladbarnea/soft-skills?style=flat-square&color=111111&label=release)](https://github.com/giladbarnea/soft-skills/releases/latest)
 ![Works with Claude Code, Codex, and Pi](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20Codex%20%7C%20Pi-111111?style=flat-square)
 [![MIT license](https://img.shields.io/badge/license-MIT-111111?style=flat-square)](LICENSE)
 
-## Five skills keep the work usable
+**AI agents are good at code and bad at communication.**
+**`soft-skills` solves that.**
 
-- **`theory-of-mind`** restores common ground with readers whose context differs from yours.
-- **`ai-to-leader`** makes answers to your leader — human or AI — clear and simple.
-- **`ai-to-delegated`** makes delegation and collaboration work.
-- **`handoff`** carries decisions, tacit knowledge and "why" into the next session.
-- **`peer-review`** collapses complexity like tetris blocks.
+## This probably sounds familiar
 
-**When nobody can understand it, delegate it, resume it, or review it, it's not working.**
+**Your agent reports to you (a bit like a toddler):**
 
-## Pleasant to the brain
+- **A wall of text,** written from inside its own head.
+- **Terminology** it invented an hour ago.
+- **Out-of-context reasoning** that makes no sense.
+- **Implementation details** you do not care about.
+- **Decisions** it should have made on its own, surfaced to you.
 
-`ai-to-leader`: 
-- uses ASD-STE-100, plain language and stable names.
-- assumes the human has one brain, and is juggling work, family, and a dozen unfinished AI projects.
-- teaches sub-agents how to manage up their main.
-- teaches signal vs noise: what to surface to your leader and what to solve without making a fuss.
+**Your agents do a bad job working together:**
 
-## Delegation that doesn't suck
+- **The main agent micromanages** the subagent, weakens it, and destroys any added value.
+- **It replays** the subagent's work, "just to make sure."
 
-`ai-to-delegated`:
-- makes AI delegate, not micro manage.
-- teaches trust, avoiding biasing your directs, and how to scope parallel work effectively.
+## Before and after: AI work report to human
 
-## Handoffs that preserve judgment
+**Before**
 
-`handoff`:
-- captures intent, pitfalls, decisions and the rationale behind them.
-- leads the next agent from a fresh spawn to a fully onboarded replacement.
+> Wired `TokenBucketV2` behind `RL_STRICT` through the middleware shim. Fixed the flaky `test_burst_window` (clock skew in the fixture). Also refactored `limits.py` while I was there and bumped redis-py. Sliding-window edge cases still TBD but should be fine. Want me to also…
 
-## Reviews that simplify
+**After**
 
-`peer-review`:
-- studies the work with a fresh set of eyes and a wide look.
-- reports proven issues.
-- points out opportunities to collapse complexity, remove code, and gain elegance.
+> Rate limiting is live on the public API: 100 requests per minute per client.
+>
+> **One decision for you:** should paying customers get a higher limit? I recommend 1,000.
+
+## Before and after: AI to AI
+
+The main agent needs an explorer subagent to find where rate limiting happens in the codebase.
+
+**Before**
+
+> Find where rate limiting is implemented. You MUST search ONLY these EXACT locations: `server/middleware.py`, `server/limits.py`, `config/redis.yaml`. Do NOT look anywhere else.
+
+*If it knew where to look, it would not need the subagent.*
+
+**After**
+
+> I am about to change how the public API limits clients. Find where rate limiting happens and everything it touches.
+
+## The idea
+
+**`soft-skills` is built on [theory of mind](https://en.wikipedia.org/wiki/Theory_of_mind):**
+
+> In psychology and philosophy, theory of mind (often abbreviated to ToM) is the capacity to understand other individuals by ascribing mental states to them. A theory of mind includes the understanding that others' beliefs, desires, intentions, emotions, and thoughts may be different from one's own. Possessing a functional theory of mind is crucial for success in everyday human social interactions. People use a theory of mind when analyzing, judging, and inferring other people's behaviors.
+
+AI agents force you to build a bridge between their understanding and yours. **`soft-skills` solves this by making them do this for you.**
+
+## What it teaches
+
+### Agent → human
+
+- **Outcome first.** Every report re-grounds you from the last decision you made together.
+- **One name per thing.** No private jargon.
+- **Knowing signal from noise.** Only what changes your next decision. The rest gets handled.
+- **Questions with context.** What changed, the options ruled out, a recommendation.
+- **Plain English.** Short sentences for a tired brain juggling a dozen sessions.
+
+`soft-skills` applies principles from cognitive psychology, content and information design, and proven protocols like ASD-STE100.
+
+### Agent → agent
+
+- **Down, to delegates.** Brief the *why* and how it fits in the larger context. Describe the outcome you need, not how to get there. Then trust them, and let them do what they are good at.
+- **Up, to the leader.** Escalate only what needs judgment. Know which decisions to make now and report later, and which are worth pausing to surface.
+- **Sideways, to peers.** Share findings. Never instruct.
+
+**Plus, guides to the tradeoffs:**
+
+- When to delegate at all.
+- Subagents vs. teams.
+- When and when not to fork the session's context window.
+- Agents that lead agents.
+- Multi-hour runs with nobody watching.
+- Fast models vs. slow and smart models.
+- Managing the context of delegates and of itself, to keep the ship afloat.
+
+## What you get
+
+- **You make the big decisions.** Your brain stops hurting when you read AI responses.
+- **Better agent performance in longer, sharper sessions.** The upgraded context management does the work.
+- **Agents do not get stuck in rabbit holes.** They raise a flag at the right time.
+- **A team that does real work.** No babysitting needed. Agents that feel like colleagues you loved working with.
+
+## The skills
+
+| Skill | Job |
+| --- | --- |
+| `theory-of-mind` | The foundation: write for a reader who was not there. |
+| `ai-to-leader` | Reports and questions to whoever assigned the work. |
+| `ai-to-delegated` | Delegation, briefing, supervision, and teamwork. |
+| `handoff` | Pass the work to a fresh agent with decisions and reasons intact. |
+| `peer-review` | Fresh-eyes review: proven issues and complexity to remove. |
+
+**Agents load these on their own when the situation fits.**
+
+## `soft-skills` is NOT for you if:
+
+- You easily understand everything your agent tells you.
+- You don't know what "Claudish" is.
+- You never have "bro what the f*** are you saying right now" moments.
+- You never forget what you did in that other AI session.
+- You run at most one session at a time.
 
 ## Install
 
-### Claude Code
+**Claude Code**
 
 ```text
 /plugin marketplace add giladbarnea/soft-skills
 /plugin install soft-skills@soft-skills
 ```
 
-### Codex
+**Codex**
 
 ```bash
 codex plugin marketplace add giladbarnea/soft-skills
 codex plugin add soft-skills@soft-skills
 ```
 
-### Pi
+**Pi**
 
 ```bash
 pi install npm:soft-skills
 ```
 
-Start a new Pi session after installation.
-
-## Usage examples
-
-**`ai-to-leader`:**
-
-```
-# User:
-
-  /ai-to-leader i have had a long day. what are you talking about
-
-
-# Assistant:
-  
-  We've been designing a plugin that makes AI's effective communicators.
-
-  It packages five skills: `theory-of-mind`, `ai-to-leader`, `ai-to-delegated`, `handoff`, and `peer-review`.
-
-  `theory-of-mind` provides the shared foundation. The other four skills cover reporting, delegation, handoffs, and reviews.
-
-  The plugin is almost ready for release. I only need your decision on how to package it for Pi, since Pi does not support plugins natively.
-  
-  I can either package it as a single `soft-skills` skill, or as five separate skills. Which do you prefer?
-```
-
-**`ai-to-delegated`:**
-```
-# User:
-
-  study the plan and implement it. delegate work.
-
-# Assistant:
-
-  [loaded skill: `ai-to-delegated`]
-
-  I’ll assign research, implementation and review to separate sub-agents. This will prevent biasing the process.
-
-  I will only surface issues that need your attention. Finally, I will plainly summarize the end result.
-
-  Go take a break. We’ll manage.
-```
+Then start a new Pi session.
 
 ## Only Markdown
 
-The installed `soft-skills` plugin has no MCP server, executable code, network calls, hooks, or background process. Your laptop can remain disappointed by the missing daemon.
+No MCP server, no code, no network calls, no hooks, no background process. Your laptop can remain disappointed by the missing daemon.
 
-Pi installs the same `plugins/soft-skills` tree as a [Pi package](https://pi.dev/packages). The root `package.json` points Pi to its `skills` directory, so all three agents read identical files.
-
-## Release from a version tag
+<details>
+<summary><b>Releasing</b> (maintainers)</summary>
 
 Pushing a `vMAJOR.MINOR.PATCH` tag starts the [release workflow](.github/workflows/release.yml).
 
 1. Set the same version in `package.json`, `plugins/soft-skills/.claude-plugin/plugin.json`, and `plugins/soft-skills/.codex-plugin/plugin.json`.
 2. Commit and push.
-3. Create and push the matching tag. For version `1.1.0`:
+3. Create and push the matching tag:
 
    ```bash
    git tag -a v1.1.0 -m "Soft Skills v1.1.0"
    git push origin v1.1.0
    ```
 
-CI checks that all three manifest versions match the tag. It then publishes `soft-skills@1.1.0` to npm and creates the **Soft Skills v1.1.0** GitHub release.
+CI checks that the three versions match the tag, publishes to npm with [trusted publishing](https://docs.npmjs.com/trusted-publishers), and creates the GitHub release. Branch pushes alone do not publish.
 
-npm publishing uses [trusted publishing](https://docs.npmjs.com/trusted-publishers) from this workflow. No secret is required. Branch pushes alone do not publish releases.
+</details>
 
 ## License
 
