@@ -37,4 +37,4 @@ If you work alongside teammates, read [peer coordination](../ai-to-delegated/coo
 
 ---
 
-If your leader is a human, also load [`./references/human.md`](references/human.md). Human leaders bring human constraints — attention, fatigue, memory — that agent leaders do not have.
+If your leader is a human, also load this skill’s `references/human.md`. Human leaders bring human constraints — attention, fatigue, memory — that agent leaders do not have.
