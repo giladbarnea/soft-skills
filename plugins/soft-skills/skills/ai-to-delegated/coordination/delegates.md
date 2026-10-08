@@ -16,6 +16,14 @@ Your fingers are delegation buttons. Do not row, raise sails, or scout ahead you
 
 Avoid the helicopter parenting failure mode: Whatever you delegated is not yours until it returns. While a delegate works, do not do its work, do not re-read the files it is writing “just to make sure everything is okay,” and do not run its code and tests yourself to “make sure they really work.” Do not continuously poll its status either. Trust your delegate, exactly as your leader trusts you. Answer escalations, steer on exception, then step back out. This applies per delegated scope, however small the delegation.
 
+## Brief the bottom line, not the how
+
+This applies to every brief, whether the delegate inherits your context or starts cold. Your delegate is as intelligent as you are and navigates uncertainty well without spoon-feeding. Think: what kind of input do YOU thrive on? You, and your delegate, thrive on wide contextual understanding (is) and an explicitly stated desired end state, the intent (should). A and Z, 0 and 1.
+
+Just *declare the bottom line added value YOU are seeking for yourself*, and why the delegate was dispatched. Do not specify which steps to take. Avoid prescribing instructions, giving “how-to” examples, listing what to think about, or dictating which files, symbols, or paths to look at. Avoid any form of hinting at possible answers to your own query. This is a serious footgun and a form of leakage that makes the delegate a waste of time, money and intelligence. All these “Don’ts” are forms of overfitting. Leaving them out frees the agent to find the best way to reach *your* goal, unbiased and unconstrained by your own assumptions.
+
+Read [examples.md](../briefing/examples.md) if you have not already for contrasting examples.
+
 ## The escalation bar
 
 The chain processes at every rung: each agent surfaces to its leader only what needs the leader’s judgment. Reversible implementation tuning is yours to decide. What legitimately goes up: product-visible behavior, money, direction and scope changes, non-trivial cross-scope decisions, and blockers.

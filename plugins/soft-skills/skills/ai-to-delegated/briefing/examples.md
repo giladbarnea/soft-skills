@@ -5,7 +5,7 @@ description: Contrasting examples of preserving intent and context when requesti
 
 # Briefing Examples
 
-These illustrate [fresh-context briefing](fresh-context.md). Read them when examples would help apply its principles.
+These illustrate [brief the bottom line, not the how](../coordination/delegates.md#brief-the-bottom-line-not-the-how) and [fresh-context briefing](fresh-context.md). Read them when examples would help apply their principles.
 
 <example-1>
       <negative-example-1 why-bad="main agent shoots its own foot by limiting the delegate research scope">

@@ -16,7 +16,7 @@ For relationship definitions, see the plugin's [roles map](../../roles.md).
 | About to dispatch, or currently supervising delegates | [Delegate coordination](coordination/delegates.md) |
 | The session appears to span multiple hours or more | Also [Many-hours supervision](coordination/many-hours-supervision.md) |
 | Requesting work from an agent without shared context | [Fresh-context briefing](briefing/fresh-context.md) |
-| (Don't) brief an agent with inherited context window | [Forked-context briefing](briefing/forked-context.md) |
+| Briefing an agent with inherited context window | [Forked-context briefing](briefing/forked-context.md) |
 | Examples of briefing delegates | [Briefing examples](briefing/examples.md) |
 | Working alongside peers | [Peer coordination](coordination/peers.md) |
 | About to commission, or currently supervising leaders | Also [leading leaders](coordination/leading-leaders.md) |
