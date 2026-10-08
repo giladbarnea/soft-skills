@@ -13,6 +13,7 @@ For relationship definitions, see the plugin's [roles map](../../roles.md).
 | --- | --- |
 | Deciding whether delegation is worthwhile | [When to delegate](planning/when-to-delegate.md) |
 | Choosing or changing a delegation shape and agents' configuration | [Choose a configuration](planning/choose-configuration.md) |
+| The harness cannot set the model, thinking, or fork you chose | [Dispatch outside the harness](planning/dispatch-outside-the-harness.md) |
 | About to dispatch, or currently supervising delegates | [Delegate coordination](coordination/delegates.md) |
 | The session appears to span multiple hours or more | Also [Many-hours supervision](coordination/many-hours-supervision.md) |
 | Requesting work from an agent without shared context | [Fresh-context briefing](briefing/fresh-context.md) |

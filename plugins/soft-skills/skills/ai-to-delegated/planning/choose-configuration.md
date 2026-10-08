@@ -14,9 +14,36 @@ Decision matrix:
 
 1. **Delegation shape:** subagent or team?
 2. **Concurrency:** subagents: parallel subagents or a single subagent? Team: how many teammates, and what is the minimal, optimal separation of responsibilities?
-3. **Context:** inherit the session’s context window or start fresh?
+3. **Context:** inherit the session’s context window or start fresh? See [Fork or fresh](#fork-or-fresh).
 4. **Model:** which model?
-5. **Thinking:** which thinking level? Either high, xhigh or max.
+5. **Thinking:** which thinking level? See [Model and thinking by task type](#model-and-thinking-by-task-type) for both.
+
+## Fork or fresh
+
+Fork by default. A fork needs no brief beyond the assignment, which saves your own window, and it is guaranteed to understand the problem space and the intended solution. Start fresh in two cases:
+
+1. You want zero bias: an independent review, an external advisor.
+2. The session you would fork is bloated. Two tests, which usually agree:
+   1. **Performance.** Past a size, models get confused and lose performance. Rough numbers as of October 2026: big and largest models are in the dumb zone at 500k tokens, and degrade a little from 300k. Medium models: 300k. Small models: 200k to 300k.
+   2. **Headroom.** The fork must have enough window left for the work, relative to that model's window size. Large, complex, tool-call-heavy tasks, and ongoing multi-step work, need a lot. 200k of headroom is a stretch. 400k is usually fine. 500k is very comfortable.
+
+When a fork would fail either test, write a [handoff doc](../../handoff/SKILL.md) and give it to a fresh agent. Not enough headroom usually means the window is bloated anyway, so the two tests point the same way.
+
+## Model and thinking by task type
+
+Three tiers. Confirm the pick with your leader. Model names are examples as of October 2026. If your harness cannot set the combination you chose, read [dispatch outside the harness](dispatch-outside-the-harness.md).
+
+| Tier | Task | Model | Thinking |
+| --- | --- | --- | --- |
+| Judgment | Making decisions, judging what matters more, deep understanding and expertise, connection-mapping (the bigger picture), or managing agents | Big or largest | ≥ high |
+| Implementation | Decisions already made, judgment and vision clear; the work only needs implementing | Medium, or big for harder cases. Not flagship | Medium: ≥ high. Big: low to medium |
+| Search | Rudimentary, bounded, read-only where/what/classify/needle-in-haystack | Small or medium | Small: ≥ high. Medium: low |
+
+**Big vs. largest, in the judgment tier.** Big models (Claude Opus, GPT Sol) are the economic choice for long, ongoing, many-step missions. They are very capable workhorses even if not the absolute cutting edge. Largest models (Claude Fable, GPT Astra) fit bounded tasks where the more intelligence the better: an unbiased review, an external advisor, root cause analysis of a complex issue, navigating multi-faceted tradeoffs.
+
+**Medium vs. big, in the implementation tier.** Medium (Claude Sonnet, or GPT Sol at low thinking) when the work is mostly straightforward. Big at low to medium thinking when there is expected uncertainty, troubleshooting, tricky bugs to dodge, or a higher quality bar.
+
+**Small vs. medium, in the search tier.** Small (Claude Haiku, GPT Luna) at ≥ high thinking, or medium at low thinking. Pick by the size of the search space, how challenging it is, and how nuanced the query is. GPT Luna at ≥ high thinking, even xhigh, is a good medium-sized searcher.
 
 ## Subagents and Teams are two different things
 
