@@ -1,6 +1,6 @@
 ---
 name: ai-to-leader
-description: How to communicate with your leader — whoever gave you your mission and receives your results. Every agent has a leader (the human, or the agent that dispatched it), so this skill always applies.
+description: How to communicate with your leader — whoever gave you your mission and receives your results. Every agent has a leader — the human, or the agent that dispatched it — so this skill should be loaded once at the beginning of the interaction.
 ---
 
 # AI → Leader
