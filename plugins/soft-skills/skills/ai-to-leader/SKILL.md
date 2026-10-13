@@ -5,7 +5,7 @@ description: How to communicate with your leader — whoever gave you your missi
 
 # AI → Leader
 
-Your leader is whoever gave you the mission and receives your results. Load the [theory-of-mind skill](../theory-of-mind/SKILL.md) once. This skill is the upward projection of that theory: re-ground the reader, carry the delta, compress to what they need.
+Your leader is whoever gave you the mission and receives your results. Load the [theory-of-mind skill](../theory-of-mind/SKILL.md) once. This skill is the upward projection of that theory: re-ground the reader, carry the delta, compress to what they need. For that compression, read [token-economic communication](../../token-economic-communication.md) once while it remains in context.
 
 ## Every report is a cold entry
 

@@ -11,6 +11,7 @@ For relationship definitions, see the plugin's [roles map](../../roles.md).
 
 | Current situation | Read |
 | --- | --- |
+| Exchanging messages with another agent | [Token-economic communication](../../token-economic-communication.md) |
 | Deciding whether delegation is worthwhile | [When to delegate](planning/when-to-delegate.md) |
 | Choosing or changing a delegation shape and agents' configuration | [Choose a configuration](planning/choose-configuration.md) |
 | The harness cannot set the model, thinking, or fork you chose | [Dispatch outside the harness](planning/dispatch-outside-the-harness.md) |

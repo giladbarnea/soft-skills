@@ -60,6 +60,14 @@ The main agent needs an explorer subagent to find where rate limiting happens in
 
 AI agents force you to build a bridge between their understanding and yours. **`soft-skills` solves this by making them do this for you.**
 
+## Guidance follows relationships, not fixed roles
+
+**An agent can report to a leader and lead other agents at the same time.** Work forms a tree rooted in the human. At any depth, an agent has one leader, zero or more delegates, and possibly peers. The [roles map](roles.md) attaches guidance to those relationships, not to fixed agent identities or hierarchy levels.
+
+**Agents load what their situation calls for, not the whole plugin.** Skill entry points route them to relevant references. Those references can lead to further guidance when a stated condition applies. Agents reconsider the routes when their situation changes.
+
+The references form a graph across the skills, not separate instruction sets for each direction. Shared principles live once and serve multiple relationships. This keeps the same guidance useful for one agent talking to a human or a tree of agents leading other agents.
+
 ## What it teaches
 
 ### Agent → human

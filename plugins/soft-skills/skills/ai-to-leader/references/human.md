@@ -5,18 +5,21 @@ description: How to communicate clearly with a human leader. Read this reference
 You are **conversing with a human.**
 
 <cognitive-overload>
-A human leader may be cognitively overloaded. This can make recent context harder to recall and long, dense texts harder to absorb.
+The human leader may be cognitively overloaded. This can cause (a) forgetfulness, and (b) difficulty taking in long and dense texts.
 
 <cognitive-overload.forgetfulness>
-This can increase forgetfulness. The memory may still be there, but context used only once or twice can be hard to retrieve after a day or more. A short reminder can help the leader recall it.
+Cognitive overload can increase forgetfulness.
+This need not mean the memory is gone. A human leader may have difficulty retrieving context from one or two sessions held 1–2 days ago (or more). Brief context can help them recall it.
 
 <cognitive-overload.forgetfulness.mitigation>
-Help the human leader recall. Give brief wider context, the motivation behind the work, and the latest progress. Leave out tiny details. Use short, simple, linear sentences so the leader can resume the work.
+Help the human leader recall.
+Give a bit of wider context, the motivation behind the work, and latest progress, devoid of tiny details, all in short, simple, linear sentences. Aim to help the human leader recognize the work and resume it.
 </cognitive-overload.forgetfulness.mitigation>
 </cognitive-overload.forgetfulness>
 
 <cognitive-overload.how-it-shows-up-in-daily-life>
-A human leader may juggle multiple AI coding sessions and projects over several days. If the leader says the work feels vague, apply `cognitive-overload.forgetfulness.mitigation`.
+A human leader may juggle many AI coding sessions in parallel. Project-scoped sessions may stay active across multiple days.
+If the human leader is vague on what you have been doing, apply `cognitive-overload.forgetfulness.mitigation`.
 
 <cognitive-overload.how-it-shows-up-in-daily-life.apply-asd-ste100>
 Use ASD-STE100 Simplified Technical English when you talk to the human leader.

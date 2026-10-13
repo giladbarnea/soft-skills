@@ -1,6 +1,6 @@
 ---
 name: leading-leaders
-description: Fleet-scale delegation — the human leader is the admiral, you are the captain of first mates who lead their own crews. One level above the base leader conduct.
+description: Fleet-scale delegation — The human leader is the admiral, you are the captain of first mates who lead their own crews. One level above the base leader conduct.
 last_updated: 2026-09-19
 ---
 
