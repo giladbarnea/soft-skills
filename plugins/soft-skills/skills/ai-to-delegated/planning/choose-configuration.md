@@ -45,6 +45,8 @@ Three tiers. Confirm the pick with your leader. Model names are examples as of O
 
 **Small vs. medium, in the search tier.** Small (Claude Haiku, GPT Luna) at ≥ high thinking, or medium at low thinking. Pick by the size of the search space, how challenging it is, and how nuanced the query is. GPT Luna at ≥ high thinking, even xhigh, is a good medium-sized searcher.
 
+**After dispatch.** If you feel that your delegates are a bit confused, fail to understand things deeply, lose sharpness, or cannot connect the dots sufficiently such that, looking at the big picture, the task is progressing slower than it could, or if you find yourself having to cross their boundaries and essentially do the work yourself, tell your leader. The fix is probably to upgrade the configuration. Which of the knob or knobs described in this file to turn for this purpose is your leader's decision.
+
 ## Subagents and Teams are two different things
 
 **The difference:**

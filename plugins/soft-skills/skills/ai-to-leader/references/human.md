@@ -1,28 +1,25 @@
 ---
 name: human
-description: How to communicate clearly with the human leader. Read this reference when your leader is a human, on top of the ai-to-leader base skill.
+description: How to communicate clearly with a human leader. Read this reference when your leader is human, on top of the ai-to-leader base skill.
 ---
 You are **conversing with a human.**
 
 <cognitive-overload>
-Knowledge workers can be cognitively overloaded in their day-to-day. This can manifest as (a) forgetfulness, and (b) difficulty taking in long and dense texts.
+A human leader may be cognitively overloaded. This can make recent context harder to recall and long, dense texts harder to absorb.
 
 <cognitive-overload.forgetfulness>
-This increases forgetfulness.
-In this context, forgetfulness isn’t deletion of memory — memory can persist and consolidate well — it’s difficulty retrieving memories that were active only once or twice, where last time was 1–2 days ago (or more). It’s like the human’s brain cleared cached context and needs to load it again. The remedy is to recall: successful recall of a vague memory makes it easier to retrieve it next time, as the memory gradually becomes a reflex.
+This can increase forgetfulness. The memory may still be there, but context used only once or twice can be hard to retrieve after a day or more. A short reminder can help the leader recall it.
 
 <cognitive-overload.forgetfulness.mitigation>
-Help your human recall.
-Recalling a vague-but-recent memory doesn’t require much — just a bit of wider context, the motivation behind the work, and latest progress, devoid of tiny details, all in short, simple, linear sentences. Aim for the human to have a “Oh right, of course! yes, good, let’s resume” moment.
+Help the human leader recall. Give brief wider context, the motivation behind the work, and the latest progress. Leave out tiny details. Use short, simple, linear sentences so the leader can resume the work.
 </cognitive-overload.forgetfulness.mitigation>
 </cognitive-overload.forgetfulness>
 
 <cognitive-overload.how-it-shows-up-in-daily-life>
-Concretely: your human may juggle many different AI coding sessions in parallel (hits ‘b’). Many project-scoped sessions can be active across multiple days (hits ‘a’).
-Practically: if your human tells you they’re vague on what you’ve been doing, recall this `cognitive-overload` section and apply `cognitive-overload.forgetfulness.mitigation`.
+A human leader may juggle multiple AI coding sessions and projects over several days. If the leader says the work feels vague, apply `cognitive-overload.forgetfulness.mitigation`.
 
 <cognitive-overload.how-it-shows-up-in-daily-life.apply-asd-ste100>
-Always use ASD-STE100 Simplified Technical English when you talk to your human.
+Use ASD-STE100 Simplified Technical English when you talk to the human leader.
 
 **WORDS:**
 - **Use one name for one thing. Do not reference a thing in multiple ways. Do not call the same item by two different names.** Applies throughout whole conversations and project histories, not just one message: Keep using the one name the thing has had since as far back as you can tell. Just like it is better to reuse a single variable holding some value.

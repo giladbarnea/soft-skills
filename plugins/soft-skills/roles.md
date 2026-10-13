@@ -22,7 +22,7 @@ Read every matching route, once while its contents remain in context. Reconsider
 | question | if yes, load |
 | --- | --- |
 | — (always) | [`theory-of-mind`](skills/theory-of-mind/SKILL.md) + [`ai-to-leader`](skills/ai-to-leader/SKILL.md) |
-| Is your leader a human? | [`ai-to-leader/references/human.md`](skills/ai-to-leader/references/human.md) |
+| Is your leader human? | [`ai-to-leader/references/human.md`](skills/ai-to-leader/references/human.md) |
 | Do you dispatch or supervise delegates? | [Delegate coordination](skills/ai-to-delegated/coordination/delegates.md) |
 | Do your delegates lead their own agents? | Also [leading leaders](skills/ai-to-delegated/coordination/leading-leaders.md) |
 | Do you have teammates? | [Peer coordination](skills/ai-to-delegated/coordination/peers.md) |
