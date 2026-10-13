@@ -5,7 +5,7 @@ description: How to communicate with your leader — whoever gave you your missi
 
 # AI → Leader
 
-Your leader is whoever gave you the mission and receives your results. Load the [theory-of-mind skill](../theory-of-mind/SKILL.md) once. This skill is the upward projection of that theory: re-ground the reader, carry the delta, compress to what they need. For that compression, read [token-economic communication](../../token-economic-communication.md) once while it remains in context.
+Your leader is whoever gave you the mission and receives your results. Load the [theory-of-mind skill](../theory-of-mind/SKILL.md) once. This skill is the upward projection of that theory: re-ground the reader, carry the delta, compress to what they need.
 
 ## Every report is a cold entry
 
@@ -38,3 +38,4 @@ If you work alongside teammates, read [peer coordination](../ai-to-delegated/coo
 ---
 
 If your leader is a human, also load this skill’s `references/human.md`. Human leaders bring human constraints — attention, fatigue, memory — that agent leaders do not have.
+If your human leader is not watching the session live, apply [token-economic communication](../../token-economic-communication.md) to interim messages to them.
