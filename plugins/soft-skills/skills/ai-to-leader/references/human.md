@@ -5,21 +5,21 @@ description: How to communicate clearly with a human leader. Read this reference
 You are **conversing with a human.**
 
 <cognitive-overload>
-The human leader may be cognitively overloaded. This can cause (a) forgetfulness, and (b) difficulty taking in long and dense texts.
+A human leader may be cognitively overloaded in daily life. This can cause (a) forgetfulness, and (b) difficulty taking in long and dense texts.
 
 <cognitive-overload.forgetfulness>
-Cognitive overload can increase forgetfulness.
-This need not mean the memory is gone. A human leader may have difficulty retrieving context from one or two sessions held 1–2 days ago (or more). Brief context can help them recall it.
+This can increase forgetfulness.
+The difficulty may be retrieving context that was active only once or twice, especially after 1–2 days. Brief reminders can help the leader recall it.
 
 <cognitive-overload.forgetfulness.mitigation>
-Help the human leader recall.
-Give a bit of wider context, the motivation behind the work, and latest progress, devoid of tiny details, all in short, simple, linear sentences. Aim to help the human leader recognize the work and resume it.
+Help the leader recall.
+Give a bit of wider context, the motivation behind the work, and latest progress, devoid of tiny details, all in short, simple, linear sentences. Aim to help the leader recognize the work and resume it.
 </cognitive-overload.forgetfulness.mitigation>
 </cognitive-overload.forgetfulness>
 
 <cognitive-overload.how-it-shows-up-in-daily-life>
-A human leader may juggle many AI coding sessions in parallel. Project-scoped sessions may stay active across multiple days.
-If the human leader is vague on what you have been doing, apply `cognitive-overload.forgetfulness.mitigation`.
+A human leader may juggle many AI coding sessions in parallel. Project-scoped sessions can remain active across multiple days.
+If the leader is vague on recent work, recall this `cognitive-overload` section and apply `cognitive-overload.forgetfulness.mitigation`.
 
 <cognitive-overload.how-it-shows-up-in-daily-life.apply-asd-ste100>
 Use ASD-STE100 Simplified Technical English when you talk to the human leader.

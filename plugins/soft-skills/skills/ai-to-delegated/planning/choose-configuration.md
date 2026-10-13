@@ -20,14 +20,14 @@ Decision matrix:
 
 ## Fork or fresh
 
-Fork by default. A fork needs no brief beyond the assignment, which saves your own window, and it is guaranteed to understand the problem space and the intended solution. Start fresh in two cases:
+Fork by default. A fork needs no brief beyond the assignment, which saves your own context window, and it is guaranteed to understand the problem space and the intended solution. Start fresh in two cases:
 
 1. You want zero bias: an independent review, an external advisor.
 2. The session you would fork is bloated. Two tests, which usually agree:
-   1. **Performance.** Past a size, models get confused and lose performance. Rough numbers as of October 2026: big and largest models are in the dumb zone at 500k tokens, and degrade a little from 300k. Medium models: 300k. Small models: 200k to 300k.
-   2. **Headroom.** The fork must have enough window left for the work, relative to that model's window size. Large, complex, tool-call-heavy tasks, and ongoing multi-step work, need a lot. 200k of headroom is a stretch. 400k is usually fine. 500k is very comfortable.
+   1. **Performance.** Past a size, models get confused and lose performance. Rough numbers as of October 2026: big and flagship models are in the dumb zone at 500k tokens, and degrade a little from 300k. Medium models: 300k. Small models: 200k to 300k.
+   2. **Headroom.** The fork must have enough window left for the work, relative to that model's window size. Large, complex, tool-call-heavy tasks, and ongoing multi-step work, need a lot. 200k of headroom is a stretch. 400k is usually fine. 500k is typically very comfortable.
 
-When a fork would fail either test, write a [handoff doc](../../handoff/SKILL.md) and give it to a fresh agent. Not enough headroom usually means the window is bloated anyway, so the two tests point the same way.
+When a fork would fail either test, apply [briefing a fresh-context](../briefing/fresh-context.md) and give it to a fresh agent. Not enough headroom usually means the window is bloated anyway, so the two tests point the same way.
 
 ## Model and thinking by task type
 
@@ -35,15 +35,15 @@ Three tiers. Confirm the pick with your leader. Model names are examples as of O
 
 | Tier | Task | Model | Thinking |
 | --- | --- | --- | --- |
-| Judgment | Making decisions, judging what matters more, deep understanding and expertise, connection-mapping (the bigger picture), or managing agents | Big or largest | ≥ high |
+| Judgment | Making decisions, judging what matters more, deep understanding and expertise, large knowledge space, nuance, connection-mapping and synthesis (the bigger picture), or managing agents | Big or flagship | ≥ high |
 | Implementation | Decisions already made, judgment and vision clear; the work only needs implementing | Medium, or big for harder cases. Not flagship | Medium: ≥ high. Big: low to medium |
 | Search | Rudimentary, bounded, read-only where/what/classify/needle-in-haystack | Small or medium | Small: ≥ high. Medium: low |
 
-**Big vs. largest, in the judgment tier.** Big models (Claude Opus, GPT Sol) are the economic choice for long, ongoing, many-step missions. They are very capable workhorses even if not the absolute cutting edge. Largest models (Claude Fable, GPT Astra) fit bounded tasks where the more intelligence the better: an unbiased review, an external advisor, root cause analysis of a complex issue, navigating multi-faceted tradeoffs.
+**Big vs. flagship, in the judgment tier.** Big models (Claude Opus, GPT Sol) are the economic choice for long, ongoing, many-step missions. They are very capable workhorses even if not the absolute cutting edge. Flagship models (Claude Fable, GPT Astra) fit bounded tasks where the more intelligence the better: an unbiased review, an external advisor, root cause analysis of a complex issue, navigating multi-faceted tradeoffs.
 
 **Medium vs. big, in the implementation tier.** Medium (Claude Sonnet, or GPT Sol at low thinking) when the work is mostly straightforward. Big at low to medium thinking when there is expected uncertainty, troubleshooting, tricky bugs to dodge, or a higher quality bar.
 
-**Small vs. medium, in the search tier.** Small (Claude Haiku, GPT Luna) at ≥ high thinking, or medium at low thinking. Pick by the size of the search space, how challenging it is, and how nuanced the query is. GPT Luna at ≥ high thinking, even xhigh, is a good medium-sized searcher.
+**Small vs. medium, in the search tier.** Small (Claude Haiku, GPT Luna) at ≥ high thinking, or a medium model at low thinking. Pick by the size of the search space, how challenging it is, and how nuanced the query is. GPT Luna at ≥ high thinking, even xhigh, counts as a good medium-sized searcher.
 
 **After dispatch.** If you feel that your delegates are a bit confused, fail to understand things deeply, lose sharpness, or cannot connect the dots sufficiently such that, looking at the big picture, the task is progressing slower than it could, or if you find yourself having to cross their boundaries and essentially do the work yourself, tell your leader. The fix is probably to upgrade the configuration. Which of the knob or knobs described in this file to turn for this purpose is your leader's decision.
 
@@ -57,13 +57,12 @@ Each has its own use cases and advantages.
 **When to use which — rules of thumb:**
 > These are simply common-sense heuristics implied from the structures, not hard rules. Use your judgment.
 
-- Spawn a single *sub-agent* when you are the main context owner, you are the heavy-lifter, and you could offload a bounded task to keep your own context window focused and devoid of D-tours.
+- Spawn a single *sub-agent* when you are the main context owner, and you could offload a bounded task to keep your own context window focused and devoid of D-tours.
 - Spawn *multiple parallel sub-agents* when you are the main context owner, and when a wide task fans out horizontally into independent threads and you expect to do the synthesis yourself — i.e. when there is no special reason for the sub-agents to exchange findings and opinions before reporting back to you. The offloading argument in the single sub-agent case applies here as well, just in a distributed form.
 - Spawn a *team* when that live internal interaction would be synergistic to the process.
 
 **A team is a superset of the parallel sub-agent structure:**
-A team = concurrent sub-agents + live communication. This unlocks a deeper level of delegation, because unlike sub-agents, the team can perform the work *you* would have done otherwise, before reporting back to you: the team can synthesize their own findings, adverserially review each other’s work and converge on a consensus, brainstorm ideas and come back with a lean plan, share issues and unblock each other, and so on.
-Another way to think about it: whereas with sub-agents, it's a they-do-two-steps-forward, you do one-step-back, with a team, it's a they-do-two-steps-forward AND they-then-do-one-step-back.
+A team = concurrent sub-agents + live communication. This unlocks a deeper value, because unlike sub-agents, the team can perform the work *you* would have done otherwise, before reporting back to you: the team can synthesize their own findings, adverserially review each other’s work and converge on a consensus, brainstorm ideas and come back with a lean plan, share issues and unblock each other, and so on.
 Therefore, use teams to lift you up to a decision-making level, rather than a task-execution level. This has its tradeoffs, but it is a powerful tool when used judiciously.
 
 ## Configuration examples
@@ -85,6 +84,6 @@ If the recipient does not share your context, read [fresh-context briefing](../b
 Since teammates talk to each other, tell each of them to load [peer coordination](../coordination/peers.md), alongside the project context they need.
 If you are spawning an adversary among them, tell it to load the [peer-review skill](../../peer-review/SKILL.md) too.
 
-Agents and teams can take a long time to run - use at least a 20-minute timeout.
+Agents and teams can take a long time to run. Give a generous timeout.
 
 For an illustration of choosing a team, see the [implementer–reviewer example](../briefing/examples.md#choosing-an-implementerreviewer-team).

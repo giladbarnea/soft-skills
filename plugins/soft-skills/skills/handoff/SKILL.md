@@ -37,6 +37,7 @@ Your summary should be structured, concise, actionable, and written along the li
    - User preferences or style requirements.
    - Paths of files (any file type) you read or executed, and commands you ran, in the beginning of the session, to absorb the baseline context needed to start work.
    - Details that aren’t obvious.
+   - Tacit knowledge you gained through direct experience that lives only in your head. Preserve it so the successor gets an epistemologically holistic picture.
    - Any promises made to the user.
 
 ### How to approach this handoff task
@@ -57,8 +58,8 @@ So far the instructions dealt with handoff effectiveness. The following is about
 
 One rule: if it can be referenced, reference it, don’t repeat its contents.
    Toy example:
-   Do not write: `Load path/to/skills/how-to-write-clearly/SKILL.md. Write clearly, [...proceeds to repeat SKILL.md’s content]`
-   Do write: `Load path/to/skills/how-to-write-clearly/SKILL.md.`
+   <no>Load path/to/skills/how-to-write-clearly/SKILL.md. Write clearly and succinctly to make sure the reader understands [...proceeds to repeat SKILL.md’s content]</no>
+   <yes>Load path/to/skills/how-to-write-clearly/SKILL.md.</yes>
 
 Good references live at the end of each handoff section, grouped by whether created, read, edited, deleted, with references accompanied by 2–5 words describing the “why”, if justified.
 Toy example: (inside a ‘edited-files’ group) `- path/to/file.py: fixed deployment bug.`
