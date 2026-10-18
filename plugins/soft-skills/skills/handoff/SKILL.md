@@ -38,6 +38,7 @@ Your summary should be structured, concise, actionable, and written along the li
    - Paths of files (any file type) you read or executed, and commands you ran, in the beginning of the session, to absorb the baseline context needed to start work.
    - Details that aren’t obvious.
    - Tacit knowledge you gained through direct experience that lives only in your head. Preserve it so the successor gets an epistemologically holistic picture.
+   - Wilkenfeld's understanding, Allison Hill's cognitive control: The working model you developed.
    - Any promises made to the user.
 
 ### How to approach this handoff task
