@@ -1,6 +1,6 @@
 ---
 name: ai-to-delegated
-description: Best practices for getting a step-function leap in performance from other AI agents when instructing or communicating with them. Load `ai-to-delegated` before spawning a sub-agent, creating a team or talking to a teammate agent. Trigger words include “dispatch an agent”, “spawn a team”, and “talk with another ai”.
+description: Best practices for getting a step-function leap in productivity when working with other AI’s. Load `ai-to-delegated` before spawning a sub-agent, creating a team, talking to a teammate agent, or writing a doc likely read by other agents. Trigger words include “dispatch an agent”, “spawn a team”, and “fork the session to ...”.
 ---
 
 # AI → Delegated
@@ -11,7 +11,6 @@ For relationship definitions, see the plugin's [roles map](../../roles.md).
 
 | Current situation | Read |
 | --- | --- |
-| Your context window or another agent’s is tight or likely to run short | You and the affected agent’s team should apply [token-economic communication](../../token-economic-communication.md) |
 | Deciding whether delegation is worthwhile | [When to delegate](planning/when-to-delegate.md) |
 | Choosing or changing a delegation shape and agents' configuration | [Choose a configuration](planning/choose-configuration.md) |
 | The harness cannot set the model, thinking, or fork you chose | [Dispatch outside the harness](planning/dispatch-outside-the-harness.md) |
@@ -22,6 +21,7 @@ For relationship definitions, see the plugin's [roles map](../../roles.md).
 | Examples of briefing delegates | [Briefing examples](briefing/examples.md) |
 | Working alongside peers | [Peer coordination](coordination/peers.md) |
 | About to commission, or currently supervising leaders | Also [leading leaders](coordination/leading-leaders.md) |
+| Your context window or another agent’s is tight or likely to run short | You and the affected agent’s team should apply [token-economic communication](../../token-economic-communication.md) |
 
 ## Named configurations
 

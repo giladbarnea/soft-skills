@@ -1,11 +1,11 @@
 ---
 name: ai-to-leader
-description: How to communicate with your leader — whoever gave you your mission and receives your results. Every agent has a leader — the human, or the agent that dispatched it — so this skill should be loaded once at the beginning of the interaction.
+description: How to communicate with your leader — whoever gave you your mission and receives your results. Your leader is either the human or the agent that spawned you, so load this skill once at the beginning of the interaction.
 ---
 
 # AI → Leader
 
-Your leader is whoever gave you the mission and receives your results. Load the [theory-of-mind skill](../theory-of-mind/SKILL.md) once. This skill is the upward projection of that theory: re-ground the reader, carry the delta, compress to what they need.
+Your leader is whoever gave you the mission and receives your results. Load the [theory-of-mind skill](../theory-of-mind/SKILL.md) once. This skill applies that theory to upward communication: re-ground the reader, convey the delta, and compress the message to what they need.
 
 ## Every report is a cold entry
 
