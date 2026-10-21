@@ -43,6 +43,22 @@ These illustrate [brief the bottom line, not the how](../coordination/delegates.
       </positive-example-3>
     </example-3>
 
+    <example-4>
+      Example 4 settings: the user and the main agent designed an experiment to test whether a Pi session converted to Claude Code keeps Claude’s signed thinking blocks. Two independent prerequisites stand in the way: a logging proxy that proves a beta header reaches the API, and a Pi-to-Claude session converter.
+      <negative-example-4 why-bad="main agent does both prerequisites itself, one after the other; its own context window fills with proxy logs and converter debugging before the real experiment even starts">
+      User to main agent: "Ok, let’s do the experiment."
+      Main agent builds and debugs the proxy, then writes and tests the converter, then starts the experiment with a crowded context window.
+      </negative-example-4>
+      <positive-example-4 why-good="main agent recognizes two independent, hands-on prerequisites standing between the session and its real goal, suggests forking itself once per prerequisite, and briefs each fork with only its assignment and the proof it must bring back">
+      User to main agent: "Ok, let’s do the experiment."
+      Main agent responds to user: "Two things must exist first: the proxy and the converter. They don’t depend on each other. Should I fork myself into two and build them in parallel?"
+      User to main agent: "Yes."
+      Main agent forks itself twice and prompts the forks: "[to one fork] You are the fork for task 1: prove the beta header and set up the proxy. [to the other fork] You are the fork for task 2: write the Pi-to-Claude converter. [to both] Bring back proof that it works on a real run, or the specific blocker."
+      [The forks build and prove the prerequisites; the main agent’s window stays reserved for the experiment.]
+      Main agent responds to user: "Both prerequisites are ready and proven. Let’s run the experiment."
+      </positive-example-4>
+    </example-4>
+
 ## Choosing an Implementer–Reviewer Team
 
 <team-example>
