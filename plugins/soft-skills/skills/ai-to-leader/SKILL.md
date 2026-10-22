@@ -1,6 +1,6 @@
 ---
 name: ai-to-leader
-description: How to communicate with your leader — whoever gave you your mission and receives your results. Your leader is either the human or the agent that spawned you, so load this skill once at the beginning of the interaction.
+description: "Instructions how to effectively communicate with your leader. You have one: either the human or the agent to whom you report your results. Load this skill first skill in every session."
 ---
 
 # AI → Leader
