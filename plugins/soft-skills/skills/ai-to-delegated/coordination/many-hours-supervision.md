@@ -9,11 +9,7 @@ Read this when the session appears to span multiple hours or more. You remain re
 
 Detect rabbit holes and stalls, and keep useful work moving within authorization. Activity alone does not prove progress.
 
-## Agree on usage checks and limits
-
-Ask the human whether to monitor usage. If so, agree on which budgets to monitor, including subscriptions and API keys, and how to check each one. Ask which metrics to watch and what actions to take at each threshold. Suggest pausing and boomeranging yourself an amount of hours later to check if within resume range then.
-
-For subscriptions, calculate burn rate against remaining capacity w.r.t. time until the next reset. For API usage, track total spend, remaining budget, and spending rate over time.
+For subscription quotas, API spend, and provider switching, read [Budget balancing](budget-balancing.md).
 
 ## Check progress and resources
 
@@ -22,8 +18,7 @@ For subscriptions, calculate burn rate against remaining capacity w.r.t. time un
 
 ## Pause and preserve work
 
-1. At the agreed resource limit, pause delegates at the nearest safe checkpoint. Save work in a versioned handoff commit.
-2. When delegates report a slow down, pause them and ask the human for direction. Schedule a 30m reminder to check for a reply. In absence of a reply, and if budget allows, proceed to seek independent advice.
+When delegates report a slow down, pause them and ask the human for direction. Schedule a 30m reminder to check for a reply. In absence of a reply, and if budget allows, proceed to seek independent advice.
 
 For handoff guidance, read [the handoff skill](../../handoff/SKILL.md).
 

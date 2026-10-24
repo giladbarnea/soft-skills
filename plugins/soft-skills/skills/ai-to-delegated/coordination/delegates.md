@@ -30,7 +30,7 @@ The chain processes at every rung: each agent surfaces to its leader only what n
 
 **Batch approvals.** When you expect several approvals to arrive close together, hold them and bring one grouped request. One decision session beats three interruptions. A lone question does not wait for company.
 
-**Suggest, then get approval.** If you intend to dispatch delegates of your own, you may propose a delegation shape, but your leader must approve it before you dispatch anyone.
+**Suggest, then get approval**, unless your leader has already approved this kind of delegation.
 
 ## Understand an Escalation Before Passing It Up
 

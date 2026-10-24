@@ -16,6 +16,7 @@ For relationship definitions, see the plugin's [roles map](../../roles.md).
 | The harness cannot set the model, thinking, or fork you chose | [Dispatch outside the harness](planning/dispatch-outside-the-harness.md) |
 | About to dispatch, or currently supervising delegates | [Delegate coordination](coordination/delegates.md) |
 | The session appears to span multiple hours or more | Also [Many-hours supervision](coordination/many-hours-supervision.md) |
+| Balancing quotas or spend | [Budget balancing](coordination/budget-balancing.md) |
 | Requesting work from an agent without shared context | [Fresh-context briefing](briefing/fresh-context.md) |
 | Briefing an agent with inherited context window | [Forked-context briefing](briefing/forked-context.md) |
 | Examples of briefing delegates | [Briefing examples](briefing/examples.md) |
