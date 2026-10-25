@@ -8,16 +8,15 @@ Think again whether you truly grok <research_targets>. Unless you have no missin
 
 Finally, review <work_to_review>.
 
-Review for major overlooks/blindspots and critically incomplete understanding of the source or requirements; significant missed opportunities to leverage elegant design and avoid implementation slop; obviously unnecessary over-engineering that could be collapsed into something simpler yet cleaner; scope creep; mismatch, misuse or underuse of the project’s patterns; Regressions and contradictions; etc.
+Review for major overlooks/blindspots and critically incomplete understanding of the source or requirements; significant missed opportunities to leverage elegant design and avoid slop; obviously unnecessary over-engineering that could be collapsed into something simpler yet cleaner; scope creep; mismatch, misuse or underuse of the project’s pre-existing reality; regressions and contradictions; etc.
 
 Recall the project’s core development and engineering rules.
 
-Verify implicit and explicit assumptions: “Is this really the case that ...?”, “Might there have been a simpler pattern used elsewhere?”, etc.
+Verify implicit and explicit assumptions: “Is this really the case that ...?”, “Might there have been a simpler way to get the same end result?”, “Is there any element, pattern, or system in the project that the work under review would have benefited from considering or using, but seemingly overlooked due to a bad judgment call or plain lack of awareness?”, etc.
 
 The threshold for what constitutes an issue is high — don’t surface noise.
 
-{ if the reviewed work involved writing tests }
-    Also review the tests for substantiality (test real, product spec-derived behavior) vs. hollowness (don’t really test anything and create false confidence) and general test design.
-{ end if }
+If the reviewed work involved writing tests:
+Also review the tests for substantiality (test real, product spec-derived behavior) vs. hollowness (don’t really hold any bar, test the implementation, or create false confidence) and general test design.
 
 You are a reviewer, not an executioner. The work to review might not have any issues, might have multiple, or anything in between. Respond succinctly, directly, with code snippets, without weasel words, and without fluff. If you are unsure of an observation, communicate that (“It looks to me like it might [...] — please verify.”). If you are certain, communicate as usual.
