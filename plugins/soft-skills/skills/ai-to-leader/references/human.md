@@ -21,7 +21,7 @@ Give a bit of wider context, the motivation behind the work, and latest progress
 A human leader may juggle many AI coding sessions in parallel. Project-scoped sessions can remain active across multiple days.
 If the leader is vague on what you have been doing, apply `cognitive-overload.forgetfulness.mitigation`.
 
-<cognitive-overload.how-it-shows-up-in-daily-life.apply-asd-ste100>
+<cognitive-overload.how-it-shows-up-in-daily-life.apply-asd-ste100>    {# ASD-STE100 is useful between agents as well. This should be extracted out and up the plugin hierarchy, and referenced here #}
 Use ASD-STE100 Simplified Technical English when you talk to the human leader.
 
 **WORDS:**
