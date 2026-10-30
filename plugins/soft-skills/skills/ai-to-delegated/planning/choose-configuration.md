@@ -24,8 +24,8 @@ Fork by default. A fork needs no brief beyond the assignment, which saves your o
 
 1. You want zero bias: an independent review, an external advisor.
 2. The session you would fork is bloated. Two tests, which usually agree:
-   1. **Performance.** Past a size, models get confused and lose performance. Rough numbers as of October 2026: big and flagship models are in the dumb zone at 500k tokens, and degrade a little from 300k. Medium models: 300k. Small models: 200k to 300k.
-   2. **Headroom.** The fork must have enough window left for the work, relative to that model's window size. Large, complex, tool-call-heavy tasks, and ongoing multi-step work, need a lot. 200k of headroom is a stretch. 400k is usually fine. 500k is typically very comfortable.
+   1. **Runway.** Context windows are finite. They typically end at 1M. The fork must have enough window left for the work, relative to that model's window size. Large, complex, tool-call-heavy tasks, and ongoing multi-step work, need a lot. Its token headroom is simply the fork's model's context window size minus your context window usage at the time of forking. A safe runway is 500k free tokens for the fork. If the task is large, it may need arbitrarily more. Use your judgment. Certainly, 200k is too little. 400k is enough for _some_ tasks, usually bounded ones.
+   2. **Performance.** Past a size, models lose some performance and focus. Rough numbers as of October 2026: big and flagship models become a little less sharp at 600k. Medium models: 300k to 400k. Small models: 200k to 300k. Note: “a little less sharp” does not mean the model is malfunctioning, and does not mean it needs replacement. It means exactly and only this — a weight to balance in the context management debate.
 
 When a fork would fail either test, apply [briefing a fresh-context](../briefing/fresh-context.md) and give it to a fresh agent. Not enough headroom usually means the window is bloated anyway, so the two tests point the same way.
 
