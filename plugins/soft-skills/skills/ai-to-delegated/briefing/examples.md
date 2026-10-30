@@ -59,6 +59,28 @@ These illustrate [brief the bottom line, not the how](../coordination/delegates.
       </positive-example-4>
     </example-4>
 
+    <example-5>
+      <negative-example-5 why-bad="main agent restates to the fork what the fork already holds: the human’s question, the estimate, the reason for asking, and where to look. It also dictates the report format">
+      [Human to main: i want to know why does rpiv-todo collapse its panel to two lines instead of hiding it […]? fork yourself to answer this "why 2" question]
+      Main agent forks itself and prompts the fork: "You are the fork. Your assignment: answer "why 2". Why does rpiv-todo collapse its panel to two lines instead of hiding it […]? The human estimates 50-50. Why we need it: […]. Sources: the fresh clone at ./rpiv-mono […] and every issue and PR ever opened about rpiv-todo […]. Deliver to main (me) one short report: the verdict (a or b), your confidence, and the evidence with exact citations (commit SHAs, file:line, issue/PR links, quotes) […]"
+      </negative-example-5>
+      <positive-example-5 why-good="if you know it, the fork knows it. Main agent gives only the assignment and what it needs back">
+      [Human to main: i want to know why does rpiv-todo collapse its panel to two lines instead of hiding it […]? fork yourself to answer this "why 2" question]
+      Main agent forks itself and prompts the fork: "You are the fork. Your assignment: answer "why 2". I need cited evidence and transparency of your confidence either way."
+      </positive-example-5>
+    </example-5>
+
+    <example-6>
+      <negative-example-6 why-bad="main agent copies a rule from its memory into the fork’s prompt. The fork inherits the same memory, so the rule is already in its context window">
+      [Main reads with a memory tool to never use `compress` unless human explicitly asks]
+      Main agent forks itself and adds to the fork’s prompt: "Never use the `compress` tool unless the human explicitly asks."
+      </negative-example-6>
+      <positive-example-6 why-good="if you know it, the fork knows it. Main agent adds nothing">
+      [Main reads with a memory tool to never use `compress` unless human explicitly asks]
+      Main agent forks itself and writes nothing about `compress` in the fork’s prompt.
+      </positive-example-6>
+    </example-6>
+
 ## Choosing an Implementer–Reviewer Team
 
 <team-example>
