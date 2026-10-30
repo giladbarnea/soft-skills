@@ -75,7 +75,7 @@ These illustrate [brief the bottom line, not the how](../coordination/delegates.
       [Main reads with a memory tool to never use `compress` unless human explicitly asks]
       Main agent forks itself and adds to the fork’s prompt: "Never use the `compress` tool unless the human explicitly asks."
       </negative-example-6>
-      <positive-example-6 why-good="if you know it, the fork knows it. Main agent adds nothing">
+      <positive-example-6 why-good="if it's in your context window, it's in the fork's context window. Main agent adds nothing">
       [Main reads with a memory tool to never use `compress` unless human explicitly asks]
       Main agent forks itself and writes nothing about `compress` in the fork’s prompt.
       </positive-example-6>
