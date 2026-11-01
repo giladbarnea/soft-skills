@@ -1,7 +1,7 @@
 {
   "name": "soft-skills",
-  "version": "2.1.29",
-  "description": "Communication toolkit for burnt-out humans and collaborative AI's",
+  "version": "2.1.30",
+  "description": "Teaches AI agents to work with you, with each other, and for days without you.",
   "author": {
     "name": "Gilad Barnea",
     "url": "https://github.com/giladbarnea"

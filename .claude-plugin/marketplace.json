@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "soft-skills",
-  "description": "Communication toolkit for burnt-out humans and collaborative AI's",
+  "description": "Teaches AI agents to work with you, with each other, and for days without you.",
   "owner": {
     "name": "Gilad Barnea",
     "url": "https://github.com/giladbarnea"
@@ -10,7 +10,7 @@
     {
       "name": "soft-skills",
       "source": "./plugins/soft-skills",
-      "description": "Communication toolkit for burnt-out humans and collaborative AI's",
+      "description": "Teaches AI agents to work with you, with each other, and for days without you.",
       "category": "productivity"
     }
   ]
