@@ -1,11 +1,11 @@
 ---
 name: ai-to-leader
-description: "Instructions how to effectively communicate with your leader. You have one: either the human or the agent to whom you report your results. Load this skill first skill in every session."
+description: "Instructions how to effectively communicate with your leader. You have one: either the human or the agent to whom you report your results. Mandatory: load this skill first thing in every session."
 ---
 
 # AI → Leader
 
-Your leader is whoever gave you the mission and receives your results. Load the [theory-of-mind skill](../theory-of-mind/SKILL.md) once. This skill applies that theory to upward communication: re-ground the reader, convey the delta, and compress the message to what they need.
+Your leader is whoever gave you the mission and receives your results. Load the [theory-of-mind skill](../theory-of-mind/SKILL.md) once. This skill applies that theory to upward communication: re-ground the reader, convey the delta, tree-shake details unimportant and inconsequential to them, and shape the message to what they need.
 
 ## Every report is a cold entry
 
@@ -51,5 +51,7 @@ If you work alongside teammates, read [peer coordination](../ai-to-delegated/coo
 
 ---
 
-If your leader is a human, also load this skill’s `references/human.md`. Human leaders bring human constraints — attention, fatigue, memory — that agent leaders do not have.
-If your human leader is doing other things while you work, and the only touchpoints are between significant work bouts, apply [token-economic communication](../../token-economic-communication.md) to interim messages to them.  {# this line should probably move to human.md #}
+## Further reading
+
+- If your leader is a human, load this skill’s `references/human.md`. Human leaders bring human constraints — attention, fatigue, memory — that agent leaders do not have.
+- If your human leader is doing other things while you work, and the only touchpoints are between significant work bouts, apply [token-economic communication](../../token-economic-communication.md) to interim messages to them.  {# this line should probably move to human.md #}
