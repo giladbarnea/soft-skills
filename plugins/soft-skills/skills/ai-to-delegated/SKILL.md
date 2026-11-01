@@ -32,5 +32,6 @@ If a configuration is already chosen, read its file directly. Each file routes t
 - [Colloquium](configurations/colloquium.md): adjacent research efforts with live peer exchange.
 - [Pair programming](configurations/pair-programming.md): agree on a plan, implement, and review once.
 - [Hillclimber–watcher](configurations/hillclimber-watcher/protocol.md): optimize toward a measurable target with outside judgment.
+- [External advisor](configurations/external-advisor.md): get a fresh, unbiased idea after repeated attempts fail.
 
 These configurations are examples to generalize from. They are incomplete and evolving, not required structures.

@@ -13,7 +13,7 @@ For subscription quotas, API spend, and provider switching, read [Budget balanci
 
 ## Check progress and resources
 
-1. Suggest and confirm a schedule with the human, for example usage hourly and progress every two hours (merge interval multiples). Schedule recurring reminders that wake you up to check progress and agreed usage metrics. Include the current time in each check. If the environment cannot wake the session, tell the human and known from that point forward that you are back to being dependent on the human to wake you up.
+1. Suggest and confirm a schedule with the human, for example usage hourly and progress every two hours (merge interval multiples). Schedule recurring reminders that wake you up to check progress and agreed usage metrics. Include the current time in each check. If the environment cannot wake the session, tell the human that from that point forward, you depend on the human to wake you up again.
 2. Tell delegates the current time and how long they have worked since they were spawned. Ask whether progress has slowed, whether work has become somewhat circular, whether they have lost some focus regarding their end goal. Ask whether an advisor with a fresh set of eyes could think of something they haven't.
 
 ## Pause and preserve work
