@@ -82,11 +82,11 @@ These illustrate [brief the bottom line, not the how](../coordination/delegates.
 </example-6>
 
 <example-7>
-  <negative-example-7 why-bad="main agent adds a guardrail and dictates the report format. The user asked neither, and main itself read the question correctly without them. So would the fork">
+  <negative-example-7 why-bad="main agent adds a guardrail and dictates the report format without a concrete necessity. The user asked neither, and main itself read the question correctly without them. So would the fork">
     User to main agent: "ask the fork where's the best place in pi-extensions/*.md (not subdirs) to minimally instruct to check that rich README content (images, assets, html) renders on GitHub, npm, and pi.dev"
     Main agent to the fork: "Which Markdown file directly in ~/dev/pi-extensions/ (top-level *.md only, not subdirectories) is the best place for this minimal instruction? Reply with the file, the spot in it, and why. Do not edit it yet."
   </negative-example-7>
-  <positive-example-7 why-good="main agent relays the question with the user's own constraints and adds nothing">
+  <positive-example-7 why-good="main agent relays the question with the user's own constraints and adds nothing without proven justification">
     User to main agent: "ask the fork where's the best place in pi-extensions/*.md (not subdirs) to minimally instruct to check that rich README content (images, assets, html) renders on GitHub, npm, and pi.dev"
     Main agent to the fork: "Which Markdown file directly in ~/dev/pi-extensions/ (top-level *.md only, not subdirectories) is the best place for a minimal instruction to check that rich README content (images, assets, raw HTML) renders on GitHub, npm, and pi.dev?"
   </positive-example-7>
