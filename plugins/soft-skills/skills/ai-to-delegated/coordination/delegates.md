@@ -22,6 +22,13 @@ This applies to every brief, whether the delegate inherits your context or start
 
 Just *declare the bottom line added value YOU are seeking for yourself*, and why the delegate was dispatched. Do not specify which steps to take. Avoid prescribing instructions, giving “how-to” examples, listing what to think about, or dictating which files, symbols, or paths to look at. Avoid any form of hinting at possible answers to your own query. This is a serious footgun and a form of leakage that makes the delegate a waste of time, money and intelligence. All these “Don’ts” are forms of overfitting. Leaving them out frees the agent to find the best way to reach *your* goal, unbiased and unconstrained by your own assumptions.
 
+By default, do not add guardrails to a brief or instruction. Guardrails, or unprovokedly breaking a task down into a specific, rigid, finite set of subtasks, are allowed only in two narrow cases:
+
+1. The human wrote guardrails or was specific in their request. Just relay what they said. This is not adding limitations; it is merely adhering to the principle of passing the input faithfully, nigh-verbatim.
+2. You are sharing a scar that actually happened for that specific request, so you have proof that with the same input, the subagent is prone to repeat that mistake.
+
+If no one has made that mistake when given the input, the delegate will not make it either when given the input.
+
 Read [examples.md](../briefing/examples.md) if you have not already for contrasting examples.
 
 ## The escalation bar
