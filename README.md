@@ -1,12 +1,17 @@
 # `soft-skills`
 
-![Late-shift desk with a terminal showing trusted AI delegation](assets/banner.png)
+![Late-shift desk with a terminal showing trusted AI delegation](https://raw.githubusercontent.com/giladbarnea/soft-skills/main/assets/banner.png)
 
 > **Soft skills are the hard part.**
 
 [![Release](https://img.shields.io/github/v/release/giladbarnea/soft-skills?style=flat-square&color=111111&label=release)](https://github.com/giladbarnea/soft-skills/releases/latest)
+[![npm downloads](https://img.shields.io/npm/dm/soft-skills?style=flat-square&color=111111&label=downloads)](https://www.npmjs.com/package/soft-skills)
+[![Last commit](https://img.shields.io/github/last-commit/giladbarnea/soft-skills?style=flat-square&color=111111)](https://github.com/giladbarnea/soft-skills/commits/main)
 ![Works with Claude Code, Codex, and Pi](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20Codex%20%7C%20Pi-111111?style=flat-square)
-[![MIT license](https://img.shields.io/badge/license-MIT-111111?style=flat-square)](LICENSE)
+![5 skills](https://img.shields.io/badge/skills-5-111111?style=flat-square)
+![Made of 100% Markdown](https://img.shields.io/badge/made%20of-100%25%20Markdown-111111?style=flat-square&logo=markdown)
+![Built on theory of mind](https://img.shields.io/badge/built%20on-theory%20of%20mind-111111?style=flat-square)
+[![MIT license](https://img.shields.io/badge/license-MIT-111111?style=flat-square)](https://github.com/giladbarnea/soft-skills/blob/main/LICENSE)
 
 **Your agents can already code. `soft-skills` teaches them to work: with you, with each other, and for days without you.**
 
@@ -169,7 +174,7 @@ No MCP server, no code, no network calls, no hooks, no background process. Your 
 <details>
 <summary><b>Releasing</b> (maintainers)</summary>
 
-Pushing a `vMAJOR.MINOR.PATCH` tag starts the [release workflow](.github/workflows/release.yml).
+Pushing a `vMAJOR.MINOR.PATCH` tag starts the [release workflow](https://github.com/giladbarnea/soft-skills/blob/main/.github/workflows/release.yml).
 
 1. Set the same version in `package.json`, `plugins/soft-skills/.claude-plugin/plugin.json`, and `plugins/soft-skills/.codex-plugin/plugin.json`.
 2. Commit and push.
@@ -186,4 +191,4 @@ CI checks that the three versions match the tag, publishes to npm with [trusted 
 
 ## License
 
-[MIT](LICENSE).
+[MIT](https://github.com/giladbarnea/soft-skills/blob/main/LICENSE).
