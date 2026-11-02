@@ -40,7 +40,7 @@
 
 ### 1. An agent you can actually read
 
-`soft-skills` synthesizes principles from cognitive psychology, aerospace maintenance manuals, Mission Control shift changes, and hospital handoff protocols. The result:
+`soft-skills` synthesizes principles from cognitive psychology, information design, aerospace maintenance manuals, and hospital handoff protocols. The result:
 
 - **You understand every report on first read,** even after two days away from the project.
 - **You stop decoding jargon.** Every report is in plain English, with one name for each thing.
