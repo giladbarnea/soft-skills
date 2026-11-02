@@ -2,31 +2,64 @@
 
 ![Late-shift desk with a terminal showing trusted AI delegation](assets/banner.png)
 
-> **Communication toolkit for burnt-out humans and AI collaborations.**
+> **Soft skills are the hard part.**
 
 [![Release](https://img.shields.io/github/v/release/giladbarnea/soft-skills?style=flat-square&color=111111&label=release)](https://github.com/giladbarnea/soft-skills/releases/latest)
 ![Works with Claude Code, Codex, and Pi](https://img.shields.io/badge/works%20with-Claude%20Code%20%7C%20Codex%20%7C%20Pi-111111?style=flat-square)
 [![MIT license](https://img.shields.io/badge/license-MIT-111111?style=flat-square)](LICENSE)
 
-**AI agents are good at code and bad at communication.**
-**`soft-skills` solves that.**
+**Your agents can already code. `soft-skills` teaches them to work: with you, with each other, and for days without you.**
+
+`soft-skills` reverse-engineers how senior engineers work: how they report, delegate, lead a team, and keep a project moving for days.
 
 ## This probably sounds familiar
 
-**Your agent reports to you (a bit like a toddler):**
+**Your agent reports to you like a toddler:**
 
 - **A wall of text,** written from inside its own head.
 - **Terminology** it invented an hour ago.
-- **Out-of-context reasoning** that makes no sense.
 - **Implementation details** you do not care about.
 - **Decisions** it should have made on its own, surfaced to you.
 
-**Your agents do a bad job working together:**
+**Your agents work badly together:**
 
-- **The main agent micromanages** the subagent, weakens it, and destroys any added value.
-- **It replays** the subagent's work, "just to make sure."
+- **The main agent micromanages** its subagent, then replays the subagent's work "just to make sure."
+- **It hands a small task to a single subagent.** The task gets a middleman, details get lost in the handover, and the cost doubles.
 
-## Before and after: AI work report to human
+**Your long runs go nowhere:**
+
+- **You come back after two days.** The agent spent most of them retrying the same fix.
+- **The context window ran out at 2 AM,** and you only found out the next day.
+
+## What it unlocks
+
+### 1. An agent you can actually read
+
+`soft-skills` synthesizes principles from cognitive psychology, aerospace maintenance manuals, Mission Control shift changes, and hospital handoff protocols. The result:
+
+- **You understand every report on first read,** even after two days away from the project.
+- **You stop decoding jargon.** Every report is in plain English, with one name for each thing.
+- **Your attention goes only to the decisions that are yours.** The rest gets handled.
+- **You answer questions in seconds,** because each one comes with what changed, what was ruled out, and a recommendation.
+
+### 2. Agents that delegate like a good manager
+
+- **Your main session stays sharp for longer.** The noisy work fills other agents' context windows, not its own.
+- **Delegates bring back better answers.** They get the goal and the reason, not your assumptions about where the answer is.
+- **You pay less for the same work.** Fast, cheap models search. Strong models make the judgment calls.
+- **You get fewer interruptions.** Small questions get answered down the chain. You get one grouped decision.
+
+### 3. Teams that run for days without you
+
+- **Teams that talk.** Teammates share findings live, review each other, and converge before they report.
+- **Agents that lead agents.** You approve one plan. A lead agent runs sub-leads, and each sub-lead runs its own team.
+- **Self-supervision.** Scheduled check-ins catch loops and stalls. When the work is stuck, a fresh model from another provider gives an outside view.
+- **Budget awareness.** Agents track subscription and API usage, move to an approved model on another provider, and pause safely at your limit.
+- **Clean handoffs.** Before a context window runs dry, the agent writes a handoff with its decisions and reasons. A fresh agent continues without starting over.
+
+## Before and after
+
+### Agent → you
 
 **Before**
 
@@ -38,7 +71,7 @@
 >
 > **One decision for you:** should paying customers get a higher limit? I recommend 1,000.
 
-## Before and after: AI to AI
+### Agent → agent
 
 The main agent needs an explorer subagent to find where rate limiting happens in the codebase.
 
@@ -52,48 +85,38 @@ The main agent needs an explorer subagent to find where rate limiting happens in
 
 > I am about to change how the public API limits clients. Find where rate limiting happens and everything it touches.
 
+### A weekend run
+
+**Before**
+
+> You open the laptop on Monday. The agent tried 31 variations of the same fix, hit the usage limit on Saturday night, and has been idle since.
+
+**After**
+
+> The checkout tests pass. The fix is on the `checkout-retry` branch.
+>
+> On Saturday the work went in circles, and you were away. I asked an outside model for a fresh view. Its idea worked. Usage stayed under the limit you set.
+
+## Ready-made team shapes
+
+| Shape | Use it when |
+| --- | --- |
+| **Research fan-out** | Independent questions need one answer. Fast, cheap agents search in parallel. One strong agent connects the dots. |
+| **Colloquium** | Parallel research where each finding changes how the others see their own problem. |
+| **Pair programming** | Two peers agree on a plan. One builds, the other reviews once. |
+| **Hillclimber + watcher** | A measurable target. One agent iterates. A mostly quiet watcher catches tunnel vision. |
+| **External advisor** | Several attempts failed. A fresh flagship model looks for the way around the problem. |
+| **Fleet** | The work is too big for one team. A lead agent runs sub-leads, and each sub-lead runs a team. |
+
+These are starting points, not fixed structures. Agents adapt them to the work.
+
 ## The idea
 
 **`soft-skills` is built on [theory of mind](https://en.wikipedia.org/wiki/Theory_of_mind):**
 
-> In psychology and philosophy, theory of mind (often abbreviated to ToM) is the capacity to understand other individuals by ascribing mental states to them. A theory of mind includes the understanding that others' beliefs, desires, intentions, emotions, and thoughts may be different from one's own. Possessing a functional theory of mind is crucial for success in everyday human social interactions. People use a theory of mind when analyzing, judging, and inferring other people's behaviors.
+> In psychology and philosophy, theory of mind (often abbreviated to ToM) is the capacity to understand other individuals by ascribing mental states to them. A theory of mind includes the understanding that others' beliefs, desires, intentions, emotions, and thoughts may be different from one's own.
 
-AI agents force you to build a bridge between their understanding and yours. **`soft-skills` solves this by making them do this for you.**
-
-## What it teaches
-
-### Agent → human
-
-- **Outcome first.** Every report re-grounds you from the last decision you made together.
-- **One name per thing.** No private jargon.
-- **Knowing signal from noise.** Only what changes your next decision. The rest gets handled.
-- **Questions with context.** What changed, the options ruled out, a recommendation.
-- **Plain English.** Short sentences for a tired brain juggling a dozen sessions.
-
-`soft-skills` applies principles from cognitive psychology, content and information design, and proven protocols like ASD-STE100.
-
-### Agent → agent
-
-- **Down, to delegates.** Brief the *why* and how it fits in the larger context. Describe the outcome you need, not how to get there. Then trust them, and let them do what they are good at.
-- **Up, to the leader.** Escalate only what needs judgment. Know which decisions to make now and report later, and which are worth pausing to surface.
-- **Sideways, to peers.** Share findings. Never instruct.
-
-**Plus, guides to the tradeoffs:**
-
-- When to delegate at all.
-- Subagents vs. teams.
-- When and when not to fork the session's context window.
-- Agents that lead agents.
-- Multi-hour runs with nobody watching.
-- Fast models vs. slow and smart models.
-- Managing the context of delegates and of itself, to keep the ship afloat.
-
-## What you get
-
-- **You make the big decisions.** Your brain stops hurting when you read AI responses.
-- **Better agent performance in longer, sharper sessions.** The upgraded context management does the work.
-- **Agents do not get stuck in rabbit holes.** They raise a flag at the right time.
-- **A team that does real work.** No babysitting needed. Agents that feel like colleagues you loved working with.
+Every reader of an agent's message was not there while the agent worked. That is true for you, for a delegate, for a teammate, and for the next agent that reads a handoff. **`soft-skills` teaches agents to write for that reader.** The same idea also tells them what to leave out of a brief, so a delegate is free to think.
 
 ## The skills
 
@@ -101,7 +124,7 @@ AI agents force you to build a bridge between their understanding and yours. **`
 | --- | --- |
 | `theory-of-mind` | The foundation: write for a reader who was not there. |
 | `ai-to-leader` | Reports and questions to whoever assigned the work. |
-| `ai-to-delegated` | Delegation, briefing, supervision, and teamwork. |
+| `ai-to-delegated` | Delegation, briefing, team shapes, supervision, and budgets. |
 | `handoff` | Pass the work to a fresh agent with decisions and reasons intact. |
 | `peer-review` | Fresh-eyes review: proven issues and complexity to remove. |
 
@@ -113,7 +136,7 @@ AI agents force you to build a bridge between their understanding and yours. **`
 - You don't know what "Claudish" is.
 - You never have "bro what the f*** are you saying right now" moments.
 - You never forget what you did in that other AI session.
-- You run at most one session at a time.
+- You run at most one session at a time, and never for more than a day.
 
 ## Install
 
