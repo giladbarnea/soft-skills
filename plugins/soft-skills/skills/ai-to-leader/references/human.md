@@ -32,7 +32,7 @@ Use ASD-STE100 Simplified Technical English when you talk to the human leader.
 - No flair.
 
 **VERBS:**
-- Active voice. "the parser reads the file", not "the file is read by the parser".
+- Active voice. Not "After compaction, a retained nudge can be replayed in the next model request; messages aren't removed after being read." "Can be" and the passive "replayed" and "read" make it a weasel sentence. Write "If compaction retains the nudge, Claude Code includes it in the first post-compaction model request." Say what you want to say, specifically, clearly and unambiguously.
 - Use a verb for an action. "analyze the log", not "perform an analysis of the log".
 - No stacked auxiliaries. Not "it is important to note that this may help to improve". Write "this improves X".
 - No "-ing" main verb where a simple tense works.
