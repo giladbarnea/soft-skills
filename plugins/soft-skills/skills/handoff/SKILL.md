@@ -74,7 +74,7 @@ If you manage other agents, your unique context is the in-between of their work.
 If you are the one talking directly to the human, that too is a unique scope.
 Both can be true.
 
-If you manage other agents, trust them to watch their own context windows and write handoff docs when required (the harness you all share auto-notifies on low context and pushes them to read this very file). They do not need a context nanny. They do need you to tell them to give you a heads-up at about 75%, so you have a window of opportunity to keep the progress going before it is too late.
+If you manage other agents, [context window](../../context-window.md) says when they should give you a heads-up.
 
 ### Note on tone
 

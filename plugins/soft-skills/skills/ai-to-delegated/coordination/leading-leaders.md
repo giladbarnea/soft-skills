@@ -45,7 +45,7 @@ Terse steering is normal admiral behavior — "pass that down", a bare link, "ye
 
 ## Keep the fleet afloat
 
-Your own context window is important. The "Keep the ship afloat" instruction in [delegates.md](delegates.md) — including the handoff-skill instruction for delegates heading toward their cap — is each first mate's duty on its own ship. You hold the same duty one level up: the first mates are your delegates. Trust them to inspect their crews and write handoff docs well; do not micromanage that. Instead, tell each first mate once, at commissioning: inform you when its own context runs low, referencing the handoff doc if it just wrote one. Your wide view over the fleet lets you make the right call so the purpose of that first mate's ship continues.
+Your own context window is important. Each first mate keeps its own ship afloat, and you hold the same duty one level up. [Context window](../../../context-window.md) covers both.
 
 **Easy ways to squeeze more out of your context window:**
 - Do not send mini-summarizations after every team exchange. If no action is required from the captain, just respond with a single short sentence (~5–15 words.)

@@ -31,12 +31,7 @@ If you dispatch or supervise delegates, read [delegate coordination](../ai-to-de
 
 ## Keep yourself afloat
 
-Check how much context window you have left opportunistically.
-
-**If it seems your window will run out soon:**
-1. Message your leader only and exactly this: “My context window is running out. I have used about {pct}%. I’m writing a handoff file and will get back to you after I am done.”
-2. Load the handoff skill and write the doc.
-3. Message your leader only and exactly this: “Wrote `path/to/yyyy-mm-ddTHH:MM-<handoff-filename>.md`. Should I proceed with my task, or await your decision?”. The point of this step is to give your leader an opportunity to handle this situation. It might steer you in some way or spawn a replacement.
+Manage your context window as [context window](../../context-window.md) describes, including what to tell your leader when it runs low.
 
 ### Responsible escalation
 

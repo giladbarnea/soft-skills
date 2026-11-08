@@ -49,8 +49,6 @@ When doing heavy delegation (multiple serial runs of heavy concurrent shapes for
 
 ### Keep your ship afloat
 
-These are the warning signs to watch for while supervising delegates. For your own context limits, read [ai-to-leader](../../ai-to-leader/SKILL.md).
-
-Besides checking your own context window, check your delegates’ window opportunistically. Don’t manage their windows; just keep an eye out. Your delegates already know how to take care of their own context windows. Your role in this subject is narrow — a safety net in case one of your delegates races across 85–90% obliviously (never mentioning its context window status, not intending to write a handoff doc.) In that case, nudge it to write a handoff doc. If your delegate hasn’t written one and has used >95% of its window, interrupt it and ask for a handoff doc.
+For your own context window and your delegates' windows, follow [context window](../../../context-window.md).
 
 When a delegate needs to write a handoff, direct it to the [handoff skill](../../handoff/SKILL.md).

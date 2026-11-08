@@ -22,7 +22,7 @@ For relationship definitions, see the plugin's [roles map](../../roles.md).
 | Examples of briefing delegates | [Briefing examples](briefing/examples.md) |
 | Working alongside peers | [Peer coordination](coordination/peers.md) |
 | About to commission, or currently supervising leaders | Also [leading leaders](coordination/leading-leaders.md) |
-| Your context window or another agent’s is tight or likely to run short | You and the affected agent’s team should apply [token-economic communication](../../token-economic-communication.md) |
+| Your context window or another agent’s is tight or likely to run short | You and the affected agent’s team should follow [context window](../../context-window.md) |
 
 ## Named configurations
 
