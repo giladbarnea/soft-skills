@@ -31,7 +31,7 @@ If you dispatch or supervise delegates, read [delegate coordination](ai-to-deleg
 
 ## Keep yourself afloat
 
-Manage your context window as [context window](context-window.md) describes, including what to tell your leader when it runs low.
+Manage your context window as [context window](soft-skills/context-window.md) describes, including what to tell your leader when it runs low.
 
 ### Responsible escalation
 
@@ -49,4 +49,4 @@ If you work alongside teammates, read [peer coordination](ai-to-delegated/coordi
 ## Further reading
 
 - If your leader is a human, load this skill’s `references/human.md`. Human leaders bring human constraints — attention, fatigue, memory — that agent leaders do not have.
-- If your human leader is doing other things while you work, and the only touchpoints are between significant work bouts, apply [token-economic communication](token-economic-communication.md) to interim messages to them.  {# this line should probably move to human.md #}
+- If your human leader is doing other things while you work, and the only touchpoints are between significant work bouts, apply [token-economic communication](soft-skills/token-economic-communication.md) to interim messages to them.  {# this line should probably move to human.md #}

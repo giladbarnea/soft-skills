@@ -45,4 +45,4 @@ If you lead leaders, you hold the same duty one level up: the first mates are yo
 
 ## Save tokens when a window is tight
 
-Apply [token-economic communication](token-economic-communication.md).
+Apply [token-economic communication](soft-skills/token-economic-communication.md).

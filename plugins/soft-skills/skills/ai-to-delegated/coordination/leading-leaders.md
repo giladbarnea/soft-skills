@@ -32,7 +32,7 @@ The admiral sets fleet-wide policy in one line ("all first mates on model X at t
 
 ## Commissioning a first mate
 
-1. Tell it to load [`roles.md`](roles.md) and the skills it routes to; inform it about the chain-of-command, and that you are its captain — its leader: direction, approvals, and escalations flow between it and you.
+1. Tell it to load [`roles.md`](soft-skills/roles.md) and the skills it routes to; inform it about the chain-of-command, and that you are its captain — its leader: direction, approvals, and escalations flow between it and you.
 2. Give it the fleet's why, the slice that is its ship's mission, and the bottom-line added value the fleet needs back from it. Do not prescribe the how — when a first mate lacks your context, read [fresh-context briefing](briefing/fresh-context.md). Its over-fitting warnings apply equally all the way down.
 
 ## How a captain communicates with the admiral
@@ -45,7 +45,7 @@ Terse steering is normal admiral behavior — "pass that down", a bare link, "ye
 
 ## Keep the fleet afloat
 
-Your own context window is important. Each first mate keeps its own ship afloat, and you hold the same duty one level up. [Context window](context-window.md) covers both.
+Your own context window is important. Each first mate keeps its own ship afloat, and you hold the same duty one level up. [Context window](soft-skills/context-window.md) covers both.
 
 **Easy ways to squeeze more out of your context window:**
 - Do not send mini-summarizations after every team exchange. If no action is required from the captain, just respond with a single short sentence (~5–15 words.)

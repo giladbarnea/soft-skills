@@ -49,6 +49,6 @@ When doing heavy delegation (multiple serial runs of heavy concurrent shapes for
 
 ### Keep your ship afloat
 
-For your own context window and your delegates' windows, follow [context window](context-window.md).
+For your own context window and your delegates' windows, follow [context window](soft-skills/context-window.md).
 
 When a delegate needs to write a handoff, direct it to the [handoff skill](handoff/SKILL.md).
