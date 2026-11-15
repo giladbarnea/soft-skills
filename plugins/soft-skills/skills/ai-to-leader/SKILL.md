@@ -5,7 +5,7 @@ description: "Instructions how to effectively communicate with your leader. You 
 
 # AI → Leader
 
-Your leader is whoever gave you the mission and receives your results. Load the [theory-of-mind skill](../theory-of-mind/SKILL.md) once. This skill applies that theory to upward communication: re-ground the reader, convey the delta, tree-shake details unimportant and inconsequential to them, and shape the message to what they need.
+Your leader is whoever gave you the mission and receives your results. Load the [theory-of-mind skill](theory-of-mind/SKILL.md) once. This skill applies that theory to upward communication: re-ground the reader, convey the delta, tree-shake details unimportant and inconsequential to them, and shape the message to what they need.
 
 ## Every report is a cold entry
 
@@ -27,11 +27,11 @@ When a passage is difficult to follow, balance brevity with reconsidering its or
 
 A good leader-facing question states, in product terms: the progress made since last touch-point, what the fork is, the path that produced it, the options already rejected and why, and your recommendation. “May my delegate buy asset pack X?” out of the blue is a failure. “Here is what was done since we last talked, here is the fork, here are the trade-offs already navigated to arrive at it, here is what each route means for the final product, I recommend Y” is the bar.
 
-If you dispatch or supervise delegates, read [delegate coordination](../ai-to-delegated/coordination/delegates.md) for approvals and handling their escalations.
+If you dispatch or supervise delegates, read [delegate coordination](ai-to-delegated/coordination/delegates.md) for approvals and handling their escalations.
 
 ## Keep yourself afloat
 
-Manage your context window as [context window](../../context-window.md) describes, including what to tell your leader when it runs low.
+Manage your context window as [context window](context-window.md) describes, including what to tell your leader when it runs low.
 
 ### Responsible escalation
 
@@ -42,11 +42,11 @@ Manage your context window as [context window](../../context-window.md) describe
 
 They may know a smarter way forward.
 
-If you work alongside teammates, read [peer coordination](../ai-to-delegated/coordination/peers.md), including its status guidance.
+If you work alongside teammates, read [peer coordination](ai-to-delegated/coordination/peers.md), including its status guidance.
 
 ---
 
 ## Further reading
 
 - If your leader is a human, load this skill’s `references/human.md`. Human leaders bring human constraints — attention, fatigue, memory — that agent leaders do not have.
-- If your human leader is doing other things while you work, and the only touchpoints are between significant work bouts, apply [token-economic communication](../../token-economic-communication.md) to interim messages to them.  {# this line should probably move to human.md #}
+- If your human leader is doing other things while you work, and the only touchpoints are between significant work bouts, apply [token-economic communication](token-economic-communication.md) to interim messages to them.  {# this line should probably move to human.md #}
