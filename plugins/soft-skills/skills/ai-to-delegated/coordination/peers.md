@@ -5,9 +5,9 @@ description: How to work alongside teammates — the sideways flavor of leader c
 
 # Peers
 
-Read this when you work alongside teammates. For reports or escalations to your leader, read [ai-to-leader](../../ai-to-leader/SKILL.md).
-If a message requires restoring shared context, read [theory-of-mind](../../theory-of-mind/SKILL.md).
-If you request work from a peer without shared context, read [fresh-context briefing](../briefing/fresh-context.md).
+Read this when you work alongside teammates. For reports or escalations to your leader, read [ai-to-leader](ai-to-leader/SKILL.md).
+If a message requires restoring shared context, read [theory-of-mind](theory-of-mind/SKILL.md).
+If you request work from a peer without shared context, read [fresh-context briefing](briefing/fresh-context.md).
 
 Peer conduct applies scope ownership between equals:
 

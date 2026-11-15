@@ -7,7 +7,7 @@ description: Best practices for getting a step-function leap in productivity whe
 
 Read all routes that match your current situation. Follow further links only when their stated condition applies.
 Read each file once while its contents remain in context. Reconsider the routes when your situation changes.
-For relationship definitions, see the plugin's [roles map](../../roles.md).
+For relationship definitions, see the plugin's [roles map](roles.md).
 
 | Current situation | Read |
 | --- | --- |
@@ -22,7 +22,7 @@ For relationship definitions, see the plugin's [roles map](../../roles.md).
 | Examples of briefing delegates | [Briefing examples](briefing/examples.md) |
 | Working alongside peers | [Peer coordination](coordination/peers.md) |
 | About to commission, or currently supervising leaders | Also [leading leaders](coordination/leading-leaders.md) |
-| Your context window or another agent’s is tight or likely to run short | You and the affected agent’s team should follow [context window](../../context-window.md) |
+| Your context window or another agent’s is tight or likely to run short | You and the affected agent’s team should follow [context window](context-window.md) |
 
 ## Named configurations
 

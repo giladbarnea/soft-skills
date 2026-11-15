@@ -74,7 +74,7 @@ If you manage other agents, your unique context is the in-between of their work.
 If you are the one talking directly to the human, that too is a unique scope.
 Both can be true.
 
-If you manage other agents, [context window](../../context-window.md) says when they should give you a heads-up.
+If you manage other agents, [context window](context-window.md) says when they should give you a heads-up.
 
 ### Note on tone
 

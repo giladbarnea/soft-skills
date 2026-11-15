@@ -17,7 +17,7 @@ I have attempted to complete it. My work for your review is committed to { commi
 
 It touches the systems `A`, `B`, `C` and `D`: `A` publishes an event to `B`, `B` attempts to write to `C` then reports back to `A`, and depending on the report, `A` might talk to `D`.    {# Keep it ultra high-level and brief, like I wrote here. "`A` publishes an event to `B`" is literally enough if that's what `A` does. Do not mention how the systems work. Definitely do not say why they work the way they do. Do not try to be comprehensive. #}
 
-Load the `peer-review` skill and follow its `peer-review-instructions.md` reference.
+Load the `peer-review` skill and follow its `references/peer-review-instructions.md` reference.
 
 { if original user task includes instructions to load skills, documents and context-gathering resources: }
     Load the following skills, docs and resources to gain deep understanding of the review space:

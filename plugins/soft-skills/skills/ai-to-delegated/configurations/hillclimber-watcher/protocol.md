@@ -7,9 +7,9 @@ description: Pairs an iterative optimizer with a watcher that prevents tunnel vi
 # Hillclimber–Watcher Team Pattern
 
 If you haven’t yet:
-Before creating this team, read [delegate coordination](../../coordination/delegates.md).
-When briefing participants without shared context, read [fresh-context briefing](../../briefing/fresh-context.md).
-Participants: read [peer coordination](../../coordination/peers.md). The watcher also reads [watcher.md](watcher.md).
+Before creating this team, read [delegate coordination](coordination/delegates.md).
+When briefing participants without shared context, read [fresh-context briefing](briefing/fresh-context.md).
+Participants: read [peer coordination](coordination/peers.md). The watcher also reads [watcher.md](configurations/hillclimber-watcher/watcher.md).
 
 Use this pattern when the task has a measurable target, a search space, and a real risk that a busy agent will tunnel-vision while iterating. The point is not ordinary implementer/reviewer pairing. The point is **autonomous optimization with periodic outside-the-loop steering**.
 
@@ -54,7 +54,7 @@ Keep it a mission brief, not a transcript. Strip stale interpretations, tool rec
 ## Team prompt template
 
 The dispatcher supplies the goal and context file. Both participants follow the agreement below.
-When sending this template, resolve its relative file paths from this file's directory.
+Paths in this template are relative to the `ai-to-delegated` skill root.
 
 ```text
 {{ context-loading instructions, references, and this Skill }}
@@ -63,7 +63,7 @@ You are a hillclimber–watcher team. The shared goal is: <goal and measurable t
 
 Hillclimber: own the {{ task nature: either 'implementation', or 'optimization loop' for ML-shaped tasks, etc. }}. Try approaches, measure them, keep the work reproducible, and iterate toward the target. Prefer simple, principled changes over piles of special-case patches. Ping Watcher when you have meaningful progress, and answer Watcher's check-ins.
 
-Watcher: read the adjacent `watcher.md` for your observation procedure. Do not take over the implementation.
+Watcher: read `configurations/hillclimber-watcher/watcher.md` for your observation procedure. Do not take over the implementation.
 
 Both: set short, current statuses frequently. Keep summaries concise. Continue until you either reach the target or have been plateuing for more than an hour straight without progress (look at the clock from time to time if you have no feeling of passage of time.).
 

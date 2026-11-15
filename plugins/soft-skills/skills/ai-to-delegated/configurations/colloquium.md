@@ -6,8 +6,8 @@ description: Uses live peer exchange so adjacent research findings cross-pollina
 
 # Colloquium Team
 
-Before dispatching, read [delegate coordination](../coordination/delegates.md). When briefing participants without shared context, read [fresh-context briefing](../briefing/fresh-context.md).
-Participants: read [peer coordination](../coordination/peers.md) before working together.
+Before dispatching, read [delegate coordination](coordination/delegates.md). When briefing participants without shared context, read [fresh-context briefing](briefing/fresh-context.md).
+Participants: read [peer coordination](coordination/peers.md) before working together.
 
 Individually, each teammate is responsible for an orthogonal, parallel, read-only, think-heavy effort. The teammates would benefit from listening to the other teammates as they share their thoughts and findings in real time, exactly because each of them is doing its own thing. Sharing is fruitful for the same reason it’s fruitful for scientists to attend and listen to peers in scientific conferences: a peer’s finding from an adjacent problem updates your map of the shared terrain and reframes your own problem in ways you could not have generated from inside your own lane, at no cost to your own effort. Think of it as an open studio: everyone works on their own piece while absorbing the others’.
 

@@ -5,7 +5,7 @@ description: Contrasting examples of preserving intent and context when requesti
 
 # Briefing Examples
 
-These illustrate [brief the bottom line, not the how](../coordination/delegates.md#brief-the-bottom-line-not-the-how) and [fresh-context briefing](fresh-context.md). Read them when examples would help apply their principles.
+These illustrate [brief the bottom line, not the how](coordination/delegates.md#brief-the-bottom-line-not-the-how) and [fresh-context briefing](briefing/fresh-context.md). Read them when examples would help apply their principles.
 
 <example-1>
   <negative-example-1 why-bad="main agent shoots its own foot by limiting the delegate research scope">
@@ -102,7 +102,7 @@ These illustrate [brief the bottom line, not the how](../coordination/delegates.
   </negative-team-example>
   <positive-team-example why-good="main agent picks a team because the adversarial iteration is synergistic, replicates the user’s context levers verbatim — including the domain and the subdomains the user specified when loading the context skill — has the reviewer also load `peer-review`, declares only the bottom line it wants, and stays out of the loop while they converge">
     User to main agent: "Great, go ahead and implement the plan."
-    Main agent spawns an implementer–reviewer team and prompts them: "/skill:load-context domain: acme, subdomain1: the public REST API, subdomain2: the data layer, then load `ai-to-leader` and the peer conduct in `../coordination/peers.md`. You are an implementer–reviewer team. Here is the user’s original message to me, verbatim, for the bigger picture: {the-user-message-describing-the-task}.
+    Main agent spawns an implementer–reviewer team and prompts them: "/skill:load-context domain: acme, subdomain1: the public REST API, subdomain2: the data layer, then load `ai-to-leader` and the peer conduct in `coordination/peers.md`. You are an implementer–reviewer team. Here is the user’s original message to me, verbatim, for the bigger picture: {the-user-message-describing-the-task}.
     [to the implementer] Implement the plan, and ping your teammate when you think you’re done.
     [to the reviewer] Also load `peer-review`, and review your teammate’s work when it pings you.
     [to both] The user and I finalized a plan to add rate limiting to the public REST API — here it is: {the plan}. Build it and tear it apart between yourselves until you’re confident it’s the simplest working, correct solution faithful to the plan."

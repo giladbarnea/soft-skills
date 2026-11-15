@@ -6,7 +6,7 @@ description: Example of how independent user requirements map to parallel read-o
 
 # Simple Fanned-out Research Delegation Example
 
-Before dispatching, read [delegate coordination](../coordination/delegates.md). For recipients without shared context, read [fresh-context briefing](../briefing/fresh-context.md).
+Before dispatching, read [delegate coordination](coordination/delegates.md). For recipients without shared context, read [fresh-context briefing](briefing/fresh-context.md).
 
 The following is an "easy" case, because the subagents' graph maps cleanly to the user message's structure. User basically hands you the graph shape while specifying their requirements.
 

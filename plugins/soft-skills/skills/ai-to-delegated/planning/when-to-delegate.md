@@ -5,7 +5,7 @@ description: Decide whether delegation adds value through context management, sp
 
 # When to Delegate
 
-Read this when deciding whether delegation is worthwhile. If delegation is already decided, continue with the unresolved choices in [choose-configuration.md](choose-configuration.md).
+Read this when deciding whether delegation is worthwhile. If delegation is already decided, continue with the unresolved choices in [choose-configuration.md](planning/choose-configuration.md).
 
 ## Why delegate at all? Rationale
 

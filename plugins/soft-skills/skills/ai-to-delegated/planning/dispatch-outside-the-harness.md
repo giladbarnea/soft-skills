@@ -5,7 +5,7 @@ description: Start a delegate with a terminal multiplexer when the harness canno
 
 # Dispatch Outside the Harness
 
-Read this when the configuration you chose in [choose-configuration.md](choose-configuration.md) is one your harness cannot produce, and the user is willing to use a terminal multiplexer.
+Read this when the configuration you chose in [choose-configuration.md](planning/choose-configuration.md) is one your harness cannot produce, and the user is willing to use a terminal multiplexer.
 
 Proprietary harnesses limit exactly this. The main agent cannot pick any {model × thinking × context fork} combination it wants. Claude Code and Codex both have this limit.
 

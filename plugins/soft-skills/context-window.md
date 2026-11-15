@@ -32,7 +32,7 @@ Removing several hundred thousand tokens of less-relevant context, then restorin
 ## When your window will run out
 
 1. Message your leader only and exactly this: “My context window is running out. I have used about {pct}%. I’m writing a handoff file and will get back to you after I am done.”
-2. Load the [handoff skill](skills/handoff/SKILL.md) and write the doc.
+2. Load the [handoff skill](handoff/SKILL.md) and write the doc.
 3. Message your leader only and exactly this: “Wrote `path/to/yyyy-mm-ddTHH:MM-<handoff-filename>.md`. Should I proceed with my task, or await your decision?”. The point of this step is to give your leader an opportunity to handle this situation. It might steer you in some way or spawn a replacement.
 
 ## If you manage other agents

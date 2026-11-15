@@ -17,4 +17,4 @@ If a provider is over budget, move work to a pre-approved equivalent model on an
 
 At the agreed resource limit, pause delegates at the nearest safe checkpoint. Save work in a versioned handoff commit.
 
-For handoff guidance, read [the handoff skill](../../handoff/SKILL.md).
+For handoff guidance, read [the handoff skill](handoff/SKILL.md).

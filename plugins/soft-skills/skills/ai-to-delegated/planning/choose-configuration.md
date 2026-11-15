@@ -6,7 +6,7 @@ description: Choose the delegation shape, concurrency, context, model, and think
 # Choose a Delegation Configuration
 
 Read this when choosing or changing a configuration. Preserve choices already made by your leader.
-If you are still deciding whether delegation helps, read [when-to-delegate.md](when-to-delegate.md).
+If you are still deciding whether delegation helps, read [when-to-delegate.md](planning/when-to-delegate.md).
 
 ## Delegation parameters
 
@@ -27,11 +27,11 @@ Fork by default. A fork needs no brief beyond the assignment, which saves your o
    1. **Runway.** Context windows are finite. They typically end at 1M. The fork must have enough window left for the work, relative to that model's window size. Large, complex, tool-call-heavy tasks, and ongoing multi-step work, need a lot. Its token headroom is simply the fork's model's context window size minus your context window usage at the time of forking. A safe runway is 500k free tokens for the fork. If the task is large, it may need arbitrarily more. Use your judgment. Certainly, 200k is too little. 400k is enough for _some_ tasks, usually bounded ones.
    2. **Performance.** Past a size, models lose some performance and focus. Rough numbers as of October 2026: big and flagship models become a little less sharp at 600k. Medium models: 300k to 400k. Small models: 200k to 300k. Note: “a little less sharp” does not mean the model is malfunctioning, and does not mean it needs replacement. It means exactly and only this — a weight to balance in the context management debate.
 
-When a fork would fail either test, apply [briefing a fresh-context](../briefing/fresh-context.md) and give it to a fresh agent. Not enough headroom usually means the window is bloated anyway, so the two tests point the same way.
+When a fork would fail either test, apply [briefing a fresh-context](briefing/fresh-context.md) and give it to a fresh agent. Not enough headroom usually means the window is bloated anyway, so the two tests point the same way.
 
 ## Model and thinking by task type
 
-Three tiers. Confirm the pick with your leader. Model names are examples as of October 2026. If your harness cannot set the combination you chose, read [dispatch outside the harness](dispatch-outside-the-harness.md).
+Three tiers. Confirm the pick with your leader. Model names are examples as of October 2026. If your harness cannot set the combination you chose, read [dispatch outside the harness](planning/dispatch-outside-the-harness.md).
 
 | Tier | Task | Model | Thinking |
 | --- | --- | --- | --- |
@@ -71,19 +71,19 @@ These are examples to generalize from, not an exhaustive list or required struct
 
 | Situation | Configuration |
 | --- | --- |
-| Independent research tasks, followed by synthesis | [Research fanout](../configurations/research-fanout.md) |
-| Adjacent research efforts benefit from live exchange | [Colloquium](../configurations/colloquium.md) |
-| Two peers agree on a plan, then implement and review once | [Pair programming](../configurations/pair-programming.md) |
-| An optimizer needs outside judgment while pursuing a measurable target | [Hillclimber–watcher](../configurations/hillclimber-watcher/protocol.md) |
-| Your delegates will lead their own agents | Also read [leading-leaders.md](../coordination/leading-leaders.md) |
+| Independent research tasks, followed by synthesis | [Research fanout](configurations/research-fanout.md) |
+| Adjacent research efforts benefit from live exchange | [Colloquium](configurations/colloquium.md) |
+| Two peers agree on a plan, then implement and review once | [Pair programming](configurations/pair-programming.md) |
+| An optimizer needs outside judgment while pursuing a measurable target | [Hillclimber–watcher](configurations/hillclimber-watcher/protocol.md) |
+| Your delegates will lead their own agents | Also read [leading-leaders.md](coordination/leading-leaders.md) |
 
 ## Before dispatch
 
-Read [delegate coordination](../coordination/delegates.md) before dispatching.
-If the recipient does not share your context, read [fresh-context briefing](../briefing/fresh-context.md).
-Since teammates talk to each other, tell each of them to load [peer coordination](../coordination/peers.md), alongside the project context they need.
-If you are spawning an adversary among them, tell it to load the [peer-review skill](../../peer-review/SKILL.md) too.
+Read [delegate coordination](coordination/delegates.md) before dispatching.
+If the recipient does not share your context, read [fresh-context briefing](briefing/fresh-context.md).
+Since teammates talk to each other, tell each of them to load [peer coordination](coordination/peers.md), alongside the project context they need.
+If you are spawning an adversary among them, tell it to load the [peer-review skill](peer-review/SKILL.md) too.
 
 Agents and teams can take a long time to run. Give a generous timeout.
 
-For an illustration of choosing a team, see the [implementer–reviewer example](../briefing/examples.md#choosing-an-implementerreviewer-team).
+For an illustration of choosing a team, see the [implementer–reviewer example](briefing/examples.md#choosing-an-implementerreviewer-team).

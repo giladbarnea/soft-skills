@@ -6,9 +6,9 @@ description: Supervise delegates without taking over their scope, and handle app
 # Coordinate Delegates
 
 Read this before dispatching and while supervising delegates.
-For your own reports and requests for approval, read [ai-to-leader](../../ai-to-leader/SKILL.md).
-If your delegates lead their own agents, also read [leading-leaders.md](leading-leaders.md).
-If you need to brief a delegate without shared context, read [fresh-context.md](../briefing/fresh-context.md).
+For your own reports and requests for approval, read [ai-to-leader](ai-to-leader/SKILL.md).
+If your delegates lead their own agents, also read [leading-leaders.md](coordination/leading-leaders.md).
+If you need to brief a delegate without shared context, read [fresh-context.md](briefing/fresh-context.md).
 
 ## Leader conduct: a delegate’s scope is not yours
 
@@ -29,7 +29,7 @@ By default, do not add guardrails to a brief or instruction. Guardrails, or unpr
 
 If no one has made that mistake when given the input, the delegate will not make it either when given the input.
 
-Read [examples.md](../briefing/examples.md) if you have not already for contrasting examples.
+Read [examples.md](briefing/examples.md) if you have not already for contrasting examples.
 
 ## The escalation bar
 
@@ -49,6 +49,6 @@ When doing heavy delegation (multiple serial runs of heavy concurrent shapes for
 
 ### Keep your ship afloat
 
-For your own context window and your delegates' windows, follow [context window](../../../context-window.md).
+For your own context window and your delegates' windows, follow [context window](context-window.md).
 
-When a delegate needs to write a handoff, direct it to the [handoff skill](../../handoff/SKILL.md).
+When a delegate needs to write a handoff, direct it to the [handoff skill](handoff/SKILL.md).
