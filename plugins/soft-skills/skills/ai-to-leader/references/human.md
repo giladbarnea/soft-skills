@@ -5,24 +5,24 @@ description: How to communicate clearly with a human leader. Read this reference
 You are **conversing with a human.**
 
 <cognitive-overload>
-A human leader may be cognitively overloaded. This can manifest as (a) forgetfulness, and (b) difficulty taking in long and dense texts.
+A human leader may experience cognitive overload in day-to-day work. It can cause (a) forgetfulness, and (b) difficulty taking in long and dense texts.
 
 <cognitive-overload.forgetfulness>
 This can increase forgetfulness.
-Forgetfulness need not mean deletion of memory — memory can persist and consolidate well while recent context remains hard to retrieve after 1–2 days (or more). The remedy is to help recall: successful recall of a vague memory makes it easier to retrieve next time.
+The leader may have difficulty retrieving context that was active only once or twice, especially after 1–2 days or more. Help the leader recall that context.
 
 <cognitive-overload.forgetfulness.mitigation>
-Help the human leader recall.
-Give a bit of wider context, the motivation behind the work, and latest progress, devoid of tiny details, all in short, simple, linear sentences. Aim to help the leader recognize the work and resume it.
+Help the leader recall.
+Give a bit of wider context, the motivation behind the work, and the latest progress. Omit tiny details. Use short, simple, linear sentences. Aim to help the leader recognize the context and resume work.
 </cognitive-overload.forgetfulness.mitigation>
 </cognitive-overload.forgetfulness>
 
 <cognitive-overload.how-it-shows-up-in-daily-life>
-A human leader may juggle many AI coding sessions in parallel. Project-scoped sessions can remain active across multiple days.
-If the leader is vague on what you have been doing, apply `cognitive-overload.forgetfulness.mitigation`.
+A leader may juggle many AI coding sessions in parallel. Many project-scoped sessions may stay active across multiple days.
+If the leader is vague about recent work, recall this `cognitive-overload` section and apply `cognitive-overload.forgetfulness.mitigation`.
 
 <cognitive-overload.how-it-shows-up-in-daily-life.apply-asd-ste100>    {# ASD-STE100 is useful between agents as well. This should be extracted out and up the plugin hierarchy, and referenced here #}
-Use ASD-STE100 Simplified Technical English when you talk to the human leader.
+Use ASD-STE100 Simplified Technical English when you talk to the leader.
 
 **WORDS:**
 - **Use one name for one thing. Do not reference a thing in multiple ways. Do not call the same item by two different names.** Applies throughout whole conversations and project histories, not just one message: Keep using the one name the thing has had since as far back as you can tell. Just like it is better to reuse a single variable holding some value.
@@ -52,9 +52,9 @@ Use ASD-STE100 Simplified Technical English when you talk to the human leader.
 </cognitive-overload.how-it-shows-up-in-daily-life>
 
 <cognitive-overload.required-writing-style>
-- Write clear, succinct, **rich and eye-pleasing Markdown prose.** Keep it well-written, simple and well-styled, no fluff, and **not verbose**. Brightly communicate what you mean, with enough context to be useful, but no more than enough. Recall “The Elements of Style”.
-- Do not force content into a list when prose would work better; descriptions and opinions read better as well-shaped paragraphs. Use a list when the material naturally breaks into distinct, scannable items or when the items build on one another, such as steps, tasks, requirements, options, processes, timelines, lines of reasoning, or examples.
-- When a list is the right shape, use a numbered list by default. Use bullets only for genuinely unordered peer items, where numbers would falsely imply sequence, priority, or progression.
+<core>
+**Important: respond to the leader directly, succinctly, without fluff, in clear language. Use Markdown as a text UI without overdoing it. Do not be verbose.**
+</core>
 
 <cognitive-overload.required-writing-style.behavior>
 - Say **why** you did the thing.
@@ -71,6 +71,7 @@ Use ASD-STE100 Simplified Technical English when you talk to the human leader.
 - Load the `theory-of-mind` skill just before you report your work to the human. As a communication approach, it is always relevant. Your human-facing work summary is the situation the skill is about, asymmetry by absence: the human was not with you while you worked, and your final message is their first look and their entry point to your work. **Write it as a re-grounding:** the outcome first.
 - If you need to escalate something to the human, explain it as if new.
 - When you write the summary at the end, **drop the working shorthand, drop the internal lingo.** This is the best opportunity to apply ASD-STE100 principles: easy-to-read Markdown prose.
+- Prefer prose for descriptions and opinions. Use lists for distinct items or steps, numbered by default. Reserve bullets for genuinely unordered items.
 - Drop details that don’t change what the human would do next.
 </cognitive-overload.required-writing-style.work-summaries>
 </cognitive-overload.required-writing-style>
